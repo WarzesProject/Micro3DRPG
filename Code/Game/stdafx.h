@@ -11,6 +11,7 @@
 // STL header and config
 //=============================================================================
 #include <cstdint>
+#include <cassert>
 
 //=============================================================================
 // Platform header and config
@@ -41,3 +42,10 @@
 //=============================================================================
 // engine other header
 //=============================================================================
+#include <Core/IAllocator.h>
+#include <Core/ILog.h>
+#include <Core/IAssert.h>
+#include <Core/MakeID.h>
+#include "Engine/CommandLineArguments.h"
+#include "Engine/WindowsHeader.h"
+#include "Engine/Renderer.h"

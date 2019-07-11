@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CommandLineArguments.cpp" />
     <ClCompile Include="Direct3D11Renderer.cpp" />
     <ClCompile Include="Direct3D12Renderer.cpp" />
     <ClCompile Include="NullRenderer.cpp" />
@@ -33,9 +34,12 @@
     <ClCompile Include="VulkanRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CommandLineArguments.h" />
+    <ClInclude Include="PlatformTypes.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RendererInstance.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="WindowsHeader.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

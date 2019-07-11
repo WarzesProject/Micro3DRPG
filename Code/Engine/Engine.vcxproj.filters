@@ -20,6 +20,9 @@
     <ClCompile Include="VulkanRenderer.cpp">
       <Filter>RendererDLL\Vulkan</Filter>
     </ClCompile>
+    <ClCompile Include="CommandLineArguments.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -28,6 +31,15 @@
     </ClInclude>
     <ClInclude Include="RendererInstance.h">
       <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandLineArguments.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformTypes.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsHeader.h">
+      <Filter>Utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +66,9 @@
     </Filter>
     <Filter Include="RendererDLL\Vulkan">
       <UniqueIdentifier>{468515be-d218-461f-8e7c-425b0c015093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{5f74185b-634e-4190-91cd-c281f354ee1a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
