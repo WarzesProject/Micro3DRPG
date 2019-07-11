@@ -1,4 +1,8 @@
 ﻿#include "stdafx.h"
+#include <Core/DefaultAllocator.h>
+#include <Core/DefaultAssert.h>
+#include <Core/DefaultLog.h>
+#include "Engine/RendererInstance.h"
 
 //-----------------------------------------------------------------------------
 #if SE_COMPILER_MSVC

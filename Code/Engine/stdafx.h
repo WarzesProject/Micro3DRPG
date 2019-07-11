@@ -15,16 +15,16 @@
 //=============================================================================
 // Platform header and config
 //=============================================================================
-#if SE_PLATFORM_WINDOWS
-#	undef _WIN32_WINNT
-#	undef WINVER
-#	define _WIN32_WINNT SE_PLATFORM_WINDOWS
-#	define WINVER _WIN32_WINNT
-
-#	define WIN32_LEAN_AND_MEAN
-#	define WIN32_EXTRA_LEAN
-#	define NOMINMAX
-#endif
+//#if SE_PLATFORM_WINDOWS
+//#	undef _WIN32_WINNT
+//#	undef WINVER
+//#	define _WIN32_WINNT SE_PLATFORM_WINDOWS
+//#	define WINVER _WIN32_WINNT
+//
+//#	define WIN32_LEAN_AND_MEAN
+//#	define WIN32_EXTRA_LEAN
+//#	define NOMINMAX
+//#endif
 
 //=============================================================================
 // 3rd-party header
@@ -39,3 +39,7 @@
 //=============================================================================
 // engine other header
 //=============================================================================
+#include <Core/IAllocator.h>
+#include <Core/ILog.h>
+#include <Core/IAssert.h>
+#include <Core/MakeID.h>

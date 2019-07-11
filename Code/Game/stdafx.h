@@ -15,16 +15,18 @@
 //=============================================================================
 // Platform header and config
 //=============================================================================
-#if SE_PLATFORM_WINDOWS
-#	undef _WIN32_WINNT
-#	undef WINVER
-#	define _WIN32_WINNT SE_PLATFORM_WINDOWS
-#	define WINVER _WIN32_WINNT
+//#if SE_PLATFORM_WINDOWS
+//#	undef _WIN32_WINNT
+//#	undef WINVER
+//#	define _WIN32_WINNT SE_PLATFORM_WINDOWS
+//#	define WINVER _WIN32_WINNT
+//
+//#	define WIN32_LEAN_AND_MEAN
+//#	define WIN32_EXTRA_LEAN
+//#	define NOMINMAX
+//#	include <Windows.h>
+//#endif
 
-#	define WIN32_LEAN_AND_MEAN
-#	define WIN32_EXTRA_LEAN
-#	define NOMINMAX
-#endif
 
 //=============================================================================
 // 3rd-party header

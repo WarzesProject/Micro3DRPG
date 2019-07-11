@@ -14,10 +14,34 @@
     <ClInclude Include="EngineConfig.h">
       <Filter>Base</Filter>
     </ClInclude>
+    <ClInclude Include="IAllocator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultAllocator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IAssert.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultAssert.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ILog.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultLog.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MakeID.h">
+      <Filter>Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
       <UniqueIdentifier>{f249490a-179d-42ec-81b7-f1a8ccd6ee1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{bfb88d1a-8be1-425e-8e82-fefe5d8a21a2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Direct3D11Renderer.cpp">
+      <Filter>RendererDLL\Direct3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="Direct3D12Renderer.cpp">
+      <Filter>RendererDLL\Direct3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="NullRenderer.cpp">
+      <Filter>RendererDLL\NullRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLES3Renderer.cpp">
+      <Filter>RendererDLL\OpenGLES3</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLRenderer.cpp">
+      <Filter>RendererDLL\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="VulkanRenderer.cpp">
+      <Filter>RendererDLL\Vulkan</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererInstance.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{6dc9c9e9-612a-409e-abef-695a75857253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL">
+      <UniqueIdentifier>{eba27ceb-0cb9-42cf-b68a-2c28044a7c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL\Direct3D11">
+      <UniqueIdentifier>{9d9f7de3-15e3-48bb-839f-e9a78330d3af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL\Direct3D12">
+      <UniqueIdentifier>{912f73ea-350e-4d36-8104-d8fc533ee4f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL\NullRenderer">
+      <UniqueIdentifier>{8494f187-8d17-432e-b354-6223d480bcc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL\OpenGLES3">
+      <UniqueIdentifier>{0c7474e9-297d-4f84-9b43-d7f3999ea9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL\OpenGL">
+      <UniqueIdentifier>{85e53b37-7374-47f4-9157-7b75c03158ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererDLL\Vulkan">
+      <UniqueIdentifier>{468515be-d218-461f-8e7c-425b0c015093}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -27,8 +27,15 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DefaultAllocator.h" />
+    <ClInclude Include="DefaultAssert.h" />
+    <ClInclude Include="DefaultLog.h" />
     <ClInclude Include="EngineConfig.h" />
+    <ClInclude Include="IAllocator.h" />
+    <ClInclude Include="IAssert.h" />
+    <ClInclude Include="ILog.h" />
     <ClInclude Include="Macros.h" />
+    <ClInclude Include="MakeID.h" />
     <ClInclude Include="PlatformCompiler.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
