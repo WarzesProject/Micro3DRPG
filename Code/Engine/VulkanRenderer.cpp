@@ -72,8 +72,8 @@ PRAGMA_WARNING_DISABLE_MSVC(4626)	// warning C4626: 'std::codecvt_base': assignm
 PRAGMA_WARNING_DISABLE_MSVC(4774)	// warning C4774: 'sprintf_s' : format string expected in argument 3 is not a string literal
 PRAGMA_WARNING_DISABLE_MSVC(5026)	// warning C5026: 'std::_Generic_error_category': move constructor was implicitly defined as deleted
 PRAGMA_WARNING_DISABLE_MSVC(5027)	// warning C5027: 'std::_Generic_error_category': move assignment operator was implicitly defined as deleted
-#include <SPIRV/GlslangToSpv.h>
-#include <glslang/MachineIndependent/localintermediate.h>
+#include <glslang/SPIRV/GlslangToSpv.h>
+#include <glslang/glslang/MachineIndependent/localintermediate.h>
 PRAGMA_WARNING_POP
 #endif
 

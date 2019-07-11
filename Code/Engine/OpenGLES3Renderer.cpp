@@ -3,14 +3,14 @@
 /* If this renderer was compiled with "RENDERER_OPENGLES3_STATE_CLEANUP" set as preprocessor definition, the previous OpenGL ES 3 state will be restored after performing an operation (worse performance, increases the binary size slightly, might avoid unexpected behaviour when using OpenGL ES 3 directly beside this renderer)*/
 
 #define GL_GLES_PROTOTYPES 0
-#include <GLES3/gl3.h>
-#include <GLES3/gl2ext.h>
+#include <OpenGLES/GLES3/gl3.h>
+#include <OpenGLES/GLES3/gl2ext.h>
 
 // Disable warnings in external headers, we can't fix them
 PRAGMA_WARNING_PUSH
 PRAGMA_WARNING_DISABLE_MSVC(5039)	// warning C5039: 'TpSetCallbackCleanupGroup': pointer or reference to potentially throwing function passed to extern C function under -EHc. Undefined behavior may occur if this function throws an exception
-#include <EGL/egl.h>
-#include <EGL/eglext.h>
+#include <OpenGLES/EGL/egl.h>
+#include <OpenGLES/EGL/eglext.h>
 PRAGMA_WARNING_POP
 
 #ifdef _WIN32
