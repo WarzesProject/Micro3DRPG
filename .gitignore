@@ -1,0 +1,16 @@
+#Ignore thumbnails created by windows
+Thumbs.db
+
+#Ignore folder
+/_obj/
+/mat/
+
+/Code/.vs/
+
+#Ignore bin
+/bin/*/Game_*.exe
+/bin/*/Game_*.ilk
+/bin/*/Game_*.pdb
+/bin/*/Game_*.exp
+/bin/*/Game_*.lib
+/bin/*/Log.txt
