@@ -56,7 +56,7 @@
 //=============================================================================
 #if defined(_WIN32) || defined(_WIN64)
 #	undef  SE_PLATFORM_WINDOWS
-#	define SE_PLATFORM_WINDOWS 1
+#	define SE_PLATFORM_WINDOWS 0x0601
 #else
 #	error "Unknown platform"
 #endif
