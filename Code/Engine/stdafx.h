@@ -14,8 +14,10 @@
 //=============================================================================
 
 #undef _WIN32_WINNT
+#undef WINVER
 #define _WIN32_WINNT 0x0603
-//#include <SDKDDKVer.h>
+#define WINVER _WIN32_WINNT
+
 #define WIN32_LEAN_AND_MEAN
 #define WIN32_EXTRA_LEAN
 #define NOMINMAX
@@ -25,12 +27,6 @@
 // 3rd-party header
 //=============================================================================
 #pragma warning(push, 1)
-
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_syswm.h>
-#include <SDL2/SDL_rwops.h>
-
-#include <SDL2/SDL_config.h>
 
 
 #pragma warning(pop)

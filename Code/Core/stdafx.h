@@ -3,34 +3,24 @@
 //=============================================================================
 // engine first header
 //=============================================================================
+#include "PlatformCompiler.h"
+#include "Macros.h"
+#include "EngineConfig.h"
 
 //=============================================================================
 // STL header and config
 //=============================================================================
+#include <cstdint>
 
 
 //=============================================================================
 // Platform header and config
 //=============================================================================
 
-#undef _WIN32_WINNT
-#define _WIN32_WINNT 0x0603
-//#include <SDKDDKVer.h>
-#define WIN32_LEAN_AND_MEAN
-#define WIN32_EXTRA_LEAN
-#define NOMINMAX
-
-
 //=============================================================================
 // 3rd-party header
 //=============================================================================
 #pragma warning(push, 1)
-
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_syswm.h>
-#include <SDL2/SDL_rwops.h>
-
-#include <SDL2/SDL_config.h>
 
 
 #pragma warning(pop)
