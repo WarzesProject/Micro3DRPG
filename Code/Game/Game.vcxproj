@@ -177,6 +177,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Basics\FirstTexture\FirstTexture.cpp" />
     <ClCompile Include="Basics\FirstTriangle\FirstTriangle.cpp" />
     <ClCompile Include="ExampleRunner.cpp" />
     <ClCompile Include="Framework\ApplicationImplSdl2.cpp" />
@@ -199,6 +200,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture.h" />
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_410.h" />
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_450.h" />
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_ES3.h" />
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_HLSL_D3D10_D3D11_D3D12.h" />
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_Null.h" />
     <ClInclude Include="Basics\FirstTriangle\FirstTriangle.h" />
     <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_410.h" />
     <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_450.h" />

@@ -9,7 +9,7 @@
 //#include "Basics/FirstIndirectBuffer/FirstIndirectBuffer.h"
 //#include "Basics/FirstQueries/FirstQueries.h"
 //#include "Basics/VertexBuffer/VertexBuffer.h"
-//#include "Basics/FirstTexture/FirstTexture.h"
+#include "Basics/FirstTexture/FirstTexture.h"
 //#include "Basics/FirstRenderToTexture/FirstRenderToTexture.h"
 //#include "Basics/FirstMultipleRenderTargets/FirstMultipleRenderTargets.h"
 //#ifndef __ANDROID__
@@ -82,7 +82,7 @@ ExampleRunner::ExampleRunner() :
 	//addExample("FirstIndirectBuffer",			&runRenderExample<FirstIndirectBuffer>,			supportsAllRenderer);
 	//addExample("FirstQueries",					&runRenderExample<FirstQueries>,				supportsAllRenderer);
 	//addExample("VertexBuffer",					&runRenderExample<VertexBuffer>,				supportsAllRenderer);
-	//addExample("FirstTexture",					&runRenderExample<FirstTexture>,				supportsAllRenderer);
+	addExample("FirstTexture",					&runRenderExample<FirstTexture>,				supportsAllRenderer);
 	//addExample("FirstRenderToTexture",			&runRenderExample<FirstRenderToTexture>,		supportsAllRenderer);
 	//addExample("FirstMultipleRenderTargets",	&runRenderExample<FirstMultipleRenderTargets>,	supportsAllRenderer);
 	//#ifndef __ANDROID__
@@ -122,12 +122,6 @@ ExampleRunner::ExampleRunner() :
 	#ifdef RENDERER_OPENGLES3
 		mAvailableRenderers.insert("OpenGLES3");
 	#endif
-	#ifdef RENDERER_DIRECT3D9
-		mAvailableRenderers.insert("Direct3D9");
-	#endif
-	#ifdef RENDERER_DIRECT3D10
-		mAvailableRenderers.insert("Direct3D10");
-	#endif
 	#ifdef RENDERER_DIRECT3D11
 		mAvailableRenderers.insert("Direct3D11");
 	#endif
@@ -149,6 +143,8 @@ int ExampleRunner::run(const CommandLineArguments& commandLineArguments)
 	do
 	{
 		// Run current example
+		mCurrentExampleName = "FirstTexture";
+
 		result = runExample(mCurrentRendererName, mCurrentExampleName);
 		if (0 == result && !mNextRendererName.empty() && !mNextExampleName.empty())
 		{

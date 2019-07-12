@@ -27,8 +27,7 @@ extern "C"
 //-----------------------------------------------------------------------------
 int programEntryPoint(const CommandLineArguments& commandLineArguments)
 {
-	return 0;
-	//return ExampleRunner().run(commandLineArguments);
+	return ExampleRunner().run(commandLineArguments);
 }
 //-----------------------------------------------------------------------------
 int main(int argc, char **argv)

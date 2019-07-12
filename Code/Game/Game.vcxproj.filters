@@ -33,6 +33,9 @@
     <ClCompile Include="Framework\ApplicationImplSdl2.cpp">
       <Filter>example\Framework</Filter>
     </ClCompile>
+    <ClCompile Include="Basics\FirstTexture\FirstTexture.cpp">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -90,6 +93,24 @@
     <ClInclude Include="Framework\ApplicationImplSdl2.h">
       <Filter>example\Framework</Filter>
     </ClInclude>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture.h">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_410.h">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_450.h">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_ES3.h">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_HLSL_D3D10_D3D11_D3D12.h">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTexture\FirstTexture_Null.h">
+      <Filter>example\Basic\FirstTexture</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
@@ -103,6 +124,9 @@
     </Filter>
     <Filter Include="example\Framework">
       <UniqueIdentifier>{dbfbf449-07d0-4715-bef0-605dcbb10f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\Basic\FirstTexture">
+      <UniqueIdentifier>{34554dc6-8300-457c-bdc6-0b776fe9b2bb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
