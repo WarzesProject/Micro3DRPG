@@ -3,78 +3,9 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="ExampleRunner.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="ExampleBase.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="FirstTriangle.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="Color4.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="IApplication.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="ApplicationImplSdl2.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="IApplicationRendererRuntime.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
-    <ClCompile Include="IApplicationRenderer.cpp">
-      <Filter>example</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="ExampleRunner.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="ExampleBase.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplicationFrontend.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstTriangle.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstTriangle_GLSL_450.h">
-      <Filter>example\Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstTriangle_GLSL_410.h">
-      <Filter>example\Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstTriangle_GLSL_ES3.h">
-      <Filter>example\Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstTriangle_HLSL_D3D9_D3D10_D3D11_D3D12.h">
-      <Filter>example\Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="FirstTriangle_Null.h">
-      <Filter>example\Shader</Filter>
-    </ClInclude>
-    <ClInclude Include="Color4.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplicationImpl.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplication.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="ApplicationImplSdl2.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplicationRendererRuntime.h">
-      <Filter>example</Filter>
-    </ClInclude>
-    <ClInclude Include="IApplicationRenderer.h">
-      <Filter>example</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">

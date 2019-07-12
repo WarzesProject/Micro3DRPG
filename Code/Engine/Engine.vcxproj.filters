@@ -23,6 +23,384 @@
     <ClCompile Include="CommandLineArguments.cpp">
       <Filter>Utility</Filter>
     </ClCompile>
+    <ClCompile Include="RendererRuntimeImpl.cpp">
+      <Filter>RendererRuntime</Filter>
+    </ClCompile>
+    <ClCompile Include="Context.cpp">
+      <Filter>RendererRuntime</Filter>
+    </ClCompile>
+    <ClCompile Include="Asset\AssetManager.cpp">
+      <Filter>RendererRuntime\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Asset\AssetPackage.cpp">
+      <Filter>RendererRuntime\Asset</Filter>
+    </ClCompile>
+    <ClCompile Include="Asset\Loader\AssetPackageLoader.cpp">
+      <Filter>RendererRuntime\Asset\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\File\FileSystemHelper.cpp">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\File\MemoryFile.cpp">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Transform.cpp">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\EulerAngles.cpp">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Frustum.cpp">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Math.cpp">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Platform\PlatformManager.cpp">
+      <Filter>RendererRuntime\Core\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Renderer\RenderTargetTextureManager.cpp">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Renderer\RenderTargetTextureSignature.cpp">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Renderer\FramebufferManager.cpp">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Renderer\FramebufferSignature.cpp">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Renderer\RenderPassManager.cpp">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Time\Stopwatch.cpp">
+      <Filter>RendererRuntime\Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Time\TimeManager.cpp">
+      <Filter>RendererRuntime\Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugGui\DebugGuiHelper.cpp">
+      <Filter>RendererRuntime\DebugGui</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugGui\DebugGuiManager.cpp">
+      <Filter>RendererRuntime\DebugGui</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugGui\Detail\DebugGuiManagerWindows.cpp">
+      <Filter>RendererRuntime\DebugGui\Detail</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue\Renderable.cpp">
+      <Filter>RendererRuntime\RenderQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue\RenderableManager.cpp">
+      <Filter>RendererRuntime\RenderQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderQueue\RenderQueue.cpp">
+      <Filter>RendererRuntime\RenderQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\IResource.cpp">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\IResourceListener.cpp">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\RendererResourceManager.cpp">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceStreamer.cpp">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\CompositorNodeInstance.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\CompositorNodeResource.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\CompositorNodeResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\CompositorTarget.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Loader\CompositorNodeResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\CompositorPassFactory.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Clear\CompositorResourcePassClear.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Clear</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Clear\CompositorInstancePassClear.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Clear</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Compute\CompositorResourcePassCompute.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Compute</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Compute\CompositorInstancePassCompute.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Compute</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Copy\CompositorResourcePassCopy.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Copy</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Copy\CompositorInstancePassCopy.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Copy</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\DebugGui\CompositorInstancePassDebugGui.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\DebugGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorResourcePassGenerateMipmaps.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\GenerateMipmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorInstancePassGenerateMipmaps.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\GenerateMipmaps</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorResourcePassResolveMultisample.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ResolveMultisample</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorInstancePassResolveMultisample.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ResolveMultisample</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Scene\CompositorResourcePassScene.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\Scene\CompositorInstancePassScene.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\ShadowMap\CompositorResourcePassShadowMap.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\ShadowMap\CompositorInstancePassShadowMap.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorInstancePassVrHiddenAreaMesh.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorResourcePassVrHiddenAreaMesh.cpp">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorWorkspace\CompositorContextData.cpp">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorWorkspace\CompositorWorkspaceInstance.cpp">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorWorkspace\CompositorWorkspaceResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\CompositorWorkspace\Loader\CompositorWorkspaceResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\MaterialProperties.cpp">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\MaterialPropertyValue.cpp">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\MaterialResource.cpp">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\MaterialResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\MaterialTechnique.cpp">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\Loader\MaterialResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Material\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\MaterialBlueprintResource.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\MaterialBlueprintResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferSlot.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\PassBufferManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\TextureInstanceBufferManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\UniformInstanceBufferManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\IndirectBufferManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\LightBufferManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateSignature.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCacheManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCompiler.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateSignature.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsProgramCacheManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCacheManager.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCompiler.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Listener\MaterialBlueprintResourceListener.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\MaterialBlueprint\Loader\MaterialBlueprintResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\MeshResource.cpp">
+      <Filter>RendererRuntime\Resource\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\MeshResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\Loader\IMeshResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Mesh\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\Loader\MeshResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Mesh\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\SceneNode.cpp">
+      <Filter>RendererRuntime\Resource\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\SceneResource.cpp">
+      <Filter>RendererRuntime\Resource\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\SceneResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Culling\SceneCullingManager.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Culling</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Factory\SceneFactory.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\ISceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\MaterialSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Camera\CameraSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Grass\GrassSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Grass</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Light\SunlightSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Light\LightSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Mesh\SkeletonMeshSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Mesh\MeshSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Particles\ParticlesSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Sky\SkySceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Sky\HosekWilkieSky.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Terrain\TerrainSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Item\Volume\VolumeSceneItem.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Item\Volume</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Scene\Loader\SceneResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Scene\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\VertexAttributes\VertexAttributesResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\VertexAttributes</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\VertexAttributes\Loader\VertexAttributesResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\VertexAttributes\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\TextureResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\CrnArrayTextureResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\CrnTextureResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\ITextureResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\KtxTextureResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\Lz4DdsTextureResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\SkeletonAnimation\SkeletonAnimationController.cpp">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\SkeletonAnimation\SkeletonAnimationEvaluator.cpp">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\SkeletonAnimation\SkeletonAnimationResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\SkeletonAnimation\Loader\SkeletonAnimationResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Skeleton\SkeletonResource.cpp">
+      <Filter>RendererRuntime\Resource\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Skeleton\SkeletonResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Skeleton\Loader\SkeletonResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\Skeleton\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderPiece\ShaderPieceResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\ShaderPiece</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderPiece\Loader\ShaderPieceResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\ShaderPiece\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderBlueprint\ShaderBlueprintResourceManager.cpp">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderBlueprint\Loader\ShaderBlueprintResourceLoader.cpp">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\Preprocessor.cpp">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\ShaderBuilder.cpp">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\ShaderCacheManager.cpp">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\ShaderProperties.cpp">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -35,11 +413,605 @@
     <ClInclude Include="CommandLineArguments.h">
       <Filter>Utility</Filter>
     </ClInclude>
-    <ClInclude Include="PlatformTypes.h">
-      <Filter>Utility</Filter>
+    <ClInclude Include="Export.h">
+      <Filter>RendererRuntime</Filter>
     </ClInclude>
-    <ClInclude Include="WindowsHeader.h">
-      <Filter>Utility</Filter>
+    <ClInclude Include="IRendererRuntime.h">
+      <Filter>RendererRuntime</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererRuntimeImpl.h">
+      <Filter>RendererRuntime</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererRuntimeInstance.h">
+      <Filter>RendererRuntime</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>RendererRuntime</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset\Asset.h">
+      <Filter>RendererRuntime\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset\AssetManager.h">
+      <Filter>RendererRuntime\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset\AssetPackage.h">
+      <Filter>RendererRuntime\Asset</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset\Loader\AssetPackageFileFormat.h">
+      <Filter>RendererRuntime\Asset\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Asset\Loader\AssetPackageLoader.h">
+      <Filter>RendererRuntime\Asset\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GetInvalid.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IGraphicsDebugger.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IProfiler.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Loader.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Manager.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\PackedElementManager.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RemoteryProfiler.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\RenderDocGraphicsDebugger.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StringId.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SwizzleVectorElementRemove.h">
+      <Filter>RendererRuntime\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\File\PhysicsFSFileManager.h">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\File\DefaultFileManager.h">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\File\FileSystemHelper.h">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\File\IFile.h">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\File\IFileManager.h">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\File\MemoryFile.h">
+      <Filter>RendererRuntime\Core\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Plane.h">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Transform.h">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\EulerAngles.h">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Frustum.h">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Math.h">
+      <Filter>RendererRuntime\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Platform\WindowsHeader.h">
+      <Filter>RendererRuntime\Core\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Platform\PlatformManager.h">
+      <Filter>RendererRuntime\Core\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Platform\PlatformTypes.h">
+      <Filter>RendererRuntime\Core\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer\RenderTargetTextureManager.h">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer\RenderTargetTextureSignature.h">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer\FramebufferManager.h">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer\FramebufferSignature.h">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Renderer\RenderPassManager.h">
+      <Filter>RendererRuntime\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Thread\ThreadPool.h">
+      <Filter>RendererRuntime\Core\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Time\TimeManager.h">
+      <Filter>RendererRuntime\Core\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Time\Stopwatch.h">
+      <Filter>RendererRuntime\Core\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\DebugGuiManager.h">
+      <Filter>RendererRuntime\DebugGui</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\ImGuiLog.h">
+      <Filter>RendererRuntime\DebugGui</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\DebugGuiHelper.h">
+      <Filter>RendererRuntime\DebugGui</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\Detail\DebugGuiManagerWindows.h">
+      <Filter>RendererRuntime\DebugGui\Detail</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_HLSL_D3D10_D3D11_D3D12.h">
+      <Filter>RendererRuntime\DebugGui\Detail\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_Null.h">
+      <Filter>RendererRuntime\DebugGui\Detail\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_GLSL_410.h">
+      <Filter>RendererRuntime\DebugGui\Detail\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_GLSL_450.h">
+      <Filter>RendererRuntime\DebugGui\Detail\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_GLSL_ES3.h">
+      <Filter>RendererRuntime\DebugGui\Detail\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue\RenderQueue.h">
+      <Filter>RendererRuntime\RenderQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue\Renderable.h">
+      <Filter>RendererRuntime\RenderQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderQueue\RenderableManager.h">
+      <Filter>RendererRuntime\RenderQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\IResource.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\IResourceListener.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\IResourceLoader.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\IResourceManager.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\RendererResourceManager.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManagerTemplate.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceStreamer.h">
+      <Filter>RendererRuntime\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorChannel.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorFramebuffer.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorNodeInstance.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorNodeResource.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorNodeResourceManager.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorRenderTargetTexture.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\CompositorTarget.h">
+      <Filter>RendererRuntime\Resource\CompositorNode</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Loader\CompositorNodeResourceLoader.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Loader\CompositorNodeFileFormat.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ICompositorPassFactory.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ICompositorResourcePass.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\CompositorPassFactory.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ICompositorInstancePass.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Clear\CompositorResourcePassClear.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Clear\CompositorInstancePassClear.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Compute\CompositorResourcePassCompute.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Compute</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Compute\CompositorInstancePassCompute.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Compute</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Copy\CompositorResourcePassCopy.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Copy</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Copy\CompositorInstancePassCopy.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Copy</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\DebugGui\CompositorResourcePassDebugGui.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\DebugGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\DebugGui\CompositorInstancePassDebugGui.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\DebugGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorResourcePassGenerateMipmaps.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\GenerateMipmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorInstancePassGenerateMipmaps.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\GenerateMipmaps</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorResourcePassResolveMultisample.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ResolveMultisample</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorInstancePassResolveMultisample.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ResolveMultisample</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Scene\CompositorResourcePassScene.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\Scene\CompositorInstancePassScene.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ShadowMap\CompositorResourcePassShadowMap.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\ShadowMap\CompositorInstancePassShadowMap.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorInstancePassVrHiddenAreaMesh.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorResourcePassVrHiddenAreaMesh.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_GLSL_ES3.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_HLSL_D3D10_D3D11_D3D12.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_Null.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_GLSL_410.h">
+      <Filter>RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorContextData.h">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorWorkspaceInstance.h">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorWorkspaceResource.h">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorWorkspaceResourceManager.h">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorWorkspace\Loader\CompositorWorkspaceResourceLoader.h">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\CompositorWorkspace\Loader\CompositorWorkspaceFileFormat.h">
+      <Filter>RendererRuntime\Resource\CompositorWorkspace\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialProperties.h">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialProperty.h">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialPropertyValue.h">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialResource.h">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialResourceManager.h">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialTechnique.h">
+      <Filter>RendererRuntime\Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\Loader\MaterialFileFormat.h">
+      <Filter>RendererRuntime\Resource\Material\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\Loader\MaterialResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Material\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\MaterialBlueprintResource.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\MaterialBlueprintResourceManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\LightBufferManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferSlot.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\PassBufferManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\TextureInstanceBufferManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\UniformInstanceBufferManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\IndirectBufferManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\BufferManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCompiler.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateSignature.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCache.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCacheManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCompiler.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateSignature.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsProgramCache.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsProgramCacheManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCache.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCacheManager.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Listener\MaterialBlueprintResourceListener.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Listener\IMaterialBlueprintResourceListener.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Loader\MaterialBlueprintResourceLoader.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\MaterialBlueprint\Loader\MaterialBlueprintFileFormat.h">
+      <Filter>RendererRuntime\Resource\MaterialBlueprint\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\MeshResource.h">
+      <Filter>RendererRuntime\Resource\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\MeshResourceManager.h">
+      <Filter>RendererRuntime\Resource\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\SubMesh.h">
+      <Filter>RendererRuntime\Resource\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\Loader\IMeshResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Mesh\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\Loader\MeshFileFormat.h">
+      <Filter>RendererRuntime\Resource\Mesh\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\Loader\MeshResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Mesh\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\SceneNode.h">
+      <Filter>RendererRuntime\Resource\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\SceneResource.h">
+      <Filter>RendererRuntime\Resource\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\SceneResourceManager.h">
+      <Filter>RendererRuntime\Resource\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Culling\SceneCullingManager.h">
+      <Filter>RendererRuntime\Resource\Scene\Culling</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Culling\SceneItemSet.h">
+      <Filter>RendererRuntime\Resource\Scene\Culling</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Factory\SceneFactory.h">
+      <Filter>RendererRuntime\Resource\Scene\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Factory\ISceneFactory.h">
+      <Filter>RendererRuntime\Resource\Scene\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\MaterialSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\ISceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Camera\CameraSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Grass\GrassSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Grass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Light\SunlightSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Light\LightSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Mesh\SkeletonMeshSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Mesh\MeshSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Particles\ParticlesSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Sky\SkySceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Sky\ArHosekSkyModelData_RGB.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Sky\HosekWilkieSky.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Terrain\TerrainSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Item\Volume\VolumeSceneItem.h">
+      <Filter>RendererRuntime\Resource\Scene\Item\Volume</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Loader\SceneResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Scene\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Scene\Loader\SceneFileFormat.h">
+      <Filter>RendererRuntime\Resource\Scene\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\VertexAttributes\VertexAttributesResource.h">
+      <Filter>RendererRuntime\Resource\VertexAttributes</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\VertexAttributes\VertexAttributesResourceManager.h">
+      <Filter>RendererRuntime\Resource\VertexAttributes</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\VertexAttributes\Loader\VertexAttributesFileFormat.h">
+      <Filter>RendererRuntime\Resource\VertexAttributes\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\VertexAttributes\Loader\VertexAttributesResourceLoader.h">
+      <Filter>RendererRuntime\Resource\VertexAttributes\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\TextureResource.h">
+      <Filter>RendererRuntime\Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\TextureResourceManager.h">
+      <Filter>RendererRuntime\Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Loader\CrnArrayTextureResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Loader\CrnTextureResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Loader\ITextureResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Loader\KtxTextureResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Loader\Lz4DdsTextureResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Loader\CrnArrayFileFormat.h">
+      <Filter>RendererRuntime\Resource\Texture\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationController.h">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationEvaluator.h">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationResource.h">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationResourceManager.h">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SkeletonAnimation\Loader\SkeletonAnimationFileFormat.h">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\SkeletonAnimation\Loader\SkeletonAnimationResourceLoader.h">
+      <Filter>RendererRuntime\Resource\SkeletonAnimation\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Skeleton\SkeletonResource.h">
+      <Filter>RendererRuntime\Resource\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Skeleton\SkeletonResourceManager.h">
+      <Filter>RendererRuntime\Resource\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Skeleton\Loader\SkeletonFileFormat.h">
+      <Filter>RendererRuntime\Resource\Skeleton\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Skeleton\Loader\SkeletonResourceLoader.h">
+      <Filter>RendererRuntime\Resource\Skeleton\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderPiece\ShaderPieceResource.h">
+      <Filter>RendererRuntime\Resource\ShaderPiece</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderPiece\ShaderPieceResourceManager.h">
+      <Filter>RendererRuntime\Resource\ShaderPiece</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderPiece\Loader\ShaderPieceFileFormat.h">
+      <Filter>RendererRuntime\Resource\ShaderPiece\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderPiece\Loader\ShaderPieceResourceLoader.h">
+      <Filter>RendererRuntime\Resource\ShaderPiece\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\GraphicsShaderType.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\ShaderBlueprintResource.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\ShaderBlueprintResourceManager.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Loader\ShaderBlueprintResourceLoader.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Loader\ShaderBlueprintFileFormat.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\Preprocessor.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderBuilder.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderCache.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderCacheManager.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderProperties.h">
+      <Filter>RendererRuntime\Resource\ShaderBlueprint\Cache</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mak eId.h">
+      <Filter>RendererRuntime\Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +1041,201 @@
     </Filter>
     <Filter Include="Utility">
       <UniqueIdentifier>{5f74185b-634e-4190-91cd-c281f354ee1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime">
+      <UniqueIdentifier>{60b5bad6-4473-4d25-a18f-889e7a9281f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Asset">
+      <UniqueIdentifier>{b7f86727-082c-44ae-acc4-fe1c4e3971ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Asset\Loader">
+      <UniqueIdentifier>{82f1b66f-b2ec-47d3-85e8-b420422f8692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core">
+      <UniqueIdentifier>{36246c96-905e-4aa9-b826-af82d715e74c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core\File">
+      <UniqueIdentifier>{eb25047b-aaac-4b75-9831-cfb7c5bed32f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core\Math">
+      <UniqueIdentifier>{a0f654fa-6db5-4f6d-a8e7-2ec03835ba7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core\Platform">
+      <UniqueIdentifier>{290a599b-d107-4852-a1bf-d4b9ca1024cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core\Renderer">
+      <UniqueIdentifier>{1b2575c9-1f0a-4dc5-b1bf-d90cee159610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core\Thread">
+      <UniqueIdentifier>{32354610-5bab-4aac-96c2-c3dc0f80e532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Core\Time">
+      <UniqueIdentifier>{59aa7a3f-99e9-4093-b10a-f4c5d0f57496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\DebugGui">
+      <UniqueIdentifier>{6e405c2b-e81d-4f99-8d34-39d18c302f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\DebugGui\Detail">
+      <UniqueIdentifier>{677a21c2-c772-480c-b282-4837927ddc50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\DebugGui\Detail\Shader">
+      <UniqueIdentifier>{42556544-f23d-4b2c-93b0-cb7a490ee150}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\RenderQueue">
+      <UniqueIdentifier>{fe703f91-1c23-470a-a75d-5f1b6bc66746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource">
+      <UniqueIdentifier>{130c5274-3f8d-4686-89b5-d70d0a07cb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode">
+      <UniqueIdentifier>{17dccb42-5c73-49ee-9001-64f7f91fdac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Loader">
+      <UniqueIdentifier>{19354057-fcbf-4f70-8f45-278dbadb3c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass">
+      <UniqueIdentifier>{a2de3e27-4eaa-4e28-a7a0-23a5e960fda0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\Clear">
+      <UniqueIdentifier>{87517f3a-18e4-4f27-a6ac-78435e76c3ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\Compute">
+      <UniqueIdentifier>{dcf5a992-60a2-48ac-825a-752eee94bbed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\Copy">
+      <UniqueIdentifier>{eb68aa1e-4035-4e3d-a872-e0e1716f356f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\DebugGui">
+      <UniqueIdentifier>{d7a2f51c-c9b7-4557-9c60-d290fed55811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\GenerateMipmaps">
+      <UniqueIdentifier>{9763ad4b-755e-4f05-a531-d9408864d0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\ResolveMultisample">
+      <UniqueIdentifier>{e8efdc49-2e28-423e-8c83-b15220a15768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\Scene">
+      <UniqueIdentifier>{45a7ce67-8e03-4512-9f4d-c0e1dce16260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\ShadowMap">
+      <UniqueIdentifier>{069cfef0-0cb5-48eb-93e5-f44adf4aeb9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh">
+      <UniqueIdentifier>{1b6fc35b-63f9-4905-9e1b-7500033509b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader">
+      <UniqueIdentifier>{51952a0b-419b-4eca-9cc5-8438aeff438b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorWorkspace">
+      <UniqueIdentifier>{dd684226-54ca-421c-bf54-cb69e57db7c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\CompositorWorkspace\Loader">
+      <UniqueIdentifier>{b6e5a23b-d242-4c24-ac66-100e5ec4b2ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Material">
+      <UniqueIdentifier>{15304b18-1d33-4220-a2e8-7ea32357c2ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Material\Loader">
+      <UniqueIdentifier>{a189acd7-8dbe-466b-b8dd-3676248d9972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\MaterialBlueprint">
+      <UniqueIdentifier>{df314b1f-969e-4a63-b961-31485e429055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\MaterialBlueprint\BufferManager">
+      <UniqueIdentifier>{9e548cad-daa4-4965-b5b6-cf8d9e3c6348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\MaterialBlueprint\Cache">
+      <UniqueIdentifier>{6db5b3b9-7eb1-42ac-8d7a-b1eae1f94544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\MaterialBlueprint\Listener">
+      <UniqueIdentifier>{f50e964b-ce63-46d7-8791-5bde53888565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\MaterialBlueprint\Loader">
+      <UniqueIdentifier>{f5137cbf-f13b-4b34-99b1-7978ee988687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Mesh">
+      <UniqueIdentifier>{db0c0bde-b9f6-44de-aeef-651f64af1baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Mesh\Loader">
+      <UniqueIdentifier>{b1e5571b-cf2e-4e48-aab2-4db538d04480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene">
+      <UniqueIdentifier>{393047f5-4d6e-4569-abd6-50c89b503fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Culling">
+      <UniqueIdentifier>{12b32676-9cf1-4ded-b5e7-0d81966777e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Factory">
+      <UniqueIdentifier>{f404519a-103b-4d1c-96df-2a9421c37f6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item">
+      <UniqueIdentifier>{3b87211c-0ade-4493-af72-4947087534c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Camera">
+      <UniqueIdentifier>{bd7c1bf0-7445-47fa-a8a0-d9a7530704e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Grass">
+      <UniqueIdentifier>{71e9b21c-27b1-4666-81ee-da30951b577c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Light">
+      <UniqueIdentifier>{5c5a33a8-9b80-424a-9236-4d98941a33a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Mesh">
+      <UniqueIdentifier>{66ad4d8d-cc30-44af-b3b1-24e671b7bb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Particles">
+      <UniqueIdentifier>{c99869ff-5613-454c-ae6d-6ed5d5999ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Sky">
+      <UniqueIdentifier>{b5e79c57-22cb-4606-b4f0-8a189c6522e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Terrain">
+      <UniqueIdentifier>{f1f5ae91-08ab-4514-96b4-14b22a991856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Item\Volume">
+      <UniqueIdentifier>{d4264ec4-3960-4fde-8e8f-cf6caf5b9478}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Scene\Loader">
+      <UniqueIdentifier>{25c5d533-00b7-4dd2-b23a-3b082617db62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\ShaderBlueprint">
+      <UniqueIdentifier>{0d50400d-b674-4c30-ab66-d0f4404dd7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\ShaderPiece">
+      <UniqueIdentifier>{31f0d6ca-7ad0-415f-928f-00f1f7026dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Skeleton">
+      <UniqueIdentifier>{1ed23d8f-222c-4cc7-aac3-92d9336c86c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\SkeletonAnimation">
+      <UniqueIdentifier>{494edf8a-6d7a-4e55-9d78-e2de649dd3f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Texture">
+      <UniqueIdentifier>{9f4f3a27-3e74-4310-b15f-eb8bcf23e0f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\VertexAttributes">
+      <UniqueIdentifier>{1da9e52b-9ef5-4467-bfd1-e0e7ae9b552e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\VertexAttributes\Loader">
+      <UniqueIdentifier>{23b6ba38-5956-4f04-89b3-45cd449b3fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Texture\Loader">
+      <UniqueIdentifier>{b815b715-d1d6-4982-9abf-b5a92d00d22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\SkeletonAnimation\Loader">
+      <UniqueIdentifier>{e12a388f-d256-450b-b1b0-d0f58f2a7f84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\Skeleton\Loader">
+      <UniqueIdentifier>{a9786075-7616-4e59-a4c5-bf23822ac3b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\ShaderPiece\Loader">
+      <UniqueIdentifier>{2e9050a3-fd52-4605-8b72-644c48fd2a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\ShaderBlueprint\Loader">
+      <UniqueIdentifier>{6e265b45-a1f2-4c68-9437-66c2984fccd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RendererRuntime\Resource\ShaderBlueprint\Cache">
+      <UniqueIdentifier>{2faab218-7abb-461e-9e23-0d28e9116d92}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

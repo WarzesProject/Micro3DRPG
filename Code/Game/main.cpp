@@ -1,5 +1,5 @@
 ﻿#include "stdafx.h"
-#include "ExampleRunner.h"
+//#include "ExampleRunner.h"
 
 //-----------------------------------------------------------------------------
 #if SE_COMPILER_MSVC
@@ -26,7 +26,8 @@ extern "C"
 //-----------------------------------------------------------------------------
 int programEntryPoint(const CommandLineArguments& commandLineArguments)
 {
-	return ExampleRunner().run(commandLineArguments);
+	return 0;
+	//return ExampleRunner().run(commandLineArguments);
 }
 //-----------------------------------------------------------------------------
 int main(int argc, char **argv)

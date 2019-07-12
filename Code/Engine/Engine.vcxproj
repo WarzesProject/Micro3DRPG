@@ -19,12 +19,144 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Asset\AssetManager.cpp" />
+    <ClCompile Include="Asset\AssetPackage.cpp" />
+    <ClCompile Include="Asset\Loader\AssetPackageLoader.cpp" />
     <ClCompile Include="CommandLineArguments.cpp" />
+    <ClCompile Include="Context.cpp" />
+    <ClCompile Include="Core\File\FileSystemHelper.cpp" />
+    <ClCompile Include="Core\File\MemoryFile.cpp" />
+    <ClCompile Include="Core\Math\EulerAngles.cpp" />
+    <ClCompile Include="Core\Math\Frustum.cpp" />
+    <ClCompile Include="Core\Math\Math.cpp" />
+    <ClCompile Include="Core\Math\Transform.cpp" />
+    <ClCompile Include="Core\Platform\PlatformManager.cpp" />
+    <ClCompile Include="Core\Renderer\FramebufferManager.cpp" />
+    <ClCompile Include="Core\Renderer\FramebufferSignature.cpp" />
+    <ClCompile Include="Core\Renderer\RenderPassManager.cpp" />
+    <ClCompile Include="Core\Renderer\RenderTargetTextureManager.cpp" />
+    <ClCompile Include="Core\Renderer\RenderTargetTextureSignature.cpp" />
+    <ClCompile Include="Core\Time\Stopwatch.cpp" />
+    <ClCompile Include="Core\Time\TimeManager.cpp" />
+    <ClCompile Include="DebugGui\DebugGuiHelper.cpp" />
+    <ClCompile Include="DebugGui\DebugGuiManager.cpp" />
+    <ClCompile Include="DebugGui\Detail\DebugGuiManagerWindows.cpp" />
     <ClCompile Include="Direct3D11Renderer.cpp" />
     <ClCompile Include="Direct3D12Renderer.cpp" />
     <ClCompile Include="NullRenderer.cpp" />
     <ClCompile Include="OpenGLES3Renderer.cpp" />
     <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="RendererRuntimeImpl.cpp" />
+    <ClCompile Include="RenderQueue\Renderable.cpp" />
+    <ClCompile Include="RenderQueue\RenderableManager.cpp" />
+    <ClCompile Include="RenderQueue\RenderQueue.cpp" />
+    <ClCompile Include="Resource\CompositorNode\CompositorNodeInstance.cpp" />
+    <ClCompile Include="Resource\CompositorNode\CompositorNodeResource.cpp" />
+    <ClCompile Include="Resource\CompositorNode\CompositorNodeResourceManager.cpp" />
+    <ClCompile Include="Resource\CompositorNode\CompositorTarget.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Loader\CompositorNodeResourceLoader.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Clear\CompositorInstancePassClear.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Clear\CompositorResourcePassClear.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\CompositorPassFactory.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Compute\CompositorInstancePassCompute.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Compute\CompositorResourcePassCompute.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Copy\CompositorInstancePassCopy.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Copy\CompositorResourcePassCopy.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\DebugGui\CompositorInstancePassDebugGui.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorInstancePassGenerateMipmaps.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorResourcePassGenerateMipmaps.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorInstancePassResolveMultisample.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorResourcePassResolveMultisample.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Scene\CompositorInstancePassScene.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\Scene\CompositorResourcePassScene.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\ShadowMap\CompositorInstancePassShadowMap.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\ShadowMap\CompositorResourcePassShadowMap.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorInstancePassVrHiddenAreaMesh.cpp" />
+    <ClCompile Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorResourcePassVrHiddenAreaMesh.cpp" />
+    <ClCompile Include="Resource\CompositorWorkspace\CompositorContextData.cpp" />
+    <ClCompile Include="Resource\CompositorWorkspace\CompositorWorkspaceInstance.cpp" />
+    <ClCompile Include="Resource\CompositorWorkspace\CompositorWorkspaceResourceManager.cpp" />
+    <ClCompile Include="Resource\CompositorWorkspace\Loader\CompositorWorkspaceResourceLoader.cpp" />
+    <ClCompile Include="Resource\IResource.cpp" />
+    <ClCompile Include="Resource\IResourceListener.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\IndirectBufferManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\LightBufferManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferSlot.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\PassBufferManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\TextureInstanceBufferManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\BufferManager\UniformInstanceBufferManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCacheManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCompiler.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateSignature.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCacheManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCompiler.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateSignature.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Cache\GraphicsProgramCacheManager.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Listener\MaterialBlueprintResourceListener.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\Loader\MaterialBlueprintResourceLoader.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\MaterialBlueprintResource.cpp" />
+    <ClCompile Include="Resource\MaterialBlueprint\MaterialBlueprintResourceManager.cpp" />
+    <ClCompile Include="Resource\Material\Loader\MaterialResourceLoader.cpp" />
+    <ClCompile Include="Resource\Material\MaterialProperties.cpp" />
+    <ClCompile Include="Resource\Material\MaterialPropertyValue.cpp" />
+    <ClCompile Include="Resource\Material\MaterialResource.cpp" />
+    <ClCompile Include="Resource\Material\MaterialResourceManager.cpp" />
+    <ClCompile Include="Resource\Material\MaterialTechnique.cpp" />
+    <ClCompile Include="Resource\Mesh\Loader\IMeshResourceLoader.cpp" />
+    <ClCompile Include="Resource\Mesh\Loader\MeshResourceLoader.cpp" />
+    <ClCompile Include="Resource\Mesh\MeshResource.cpp" />
+    <ClCompile Include="Resource\Mesh\MeshResourceManager.cpp" />
+    <ClCompile Include="Resource\RendererResourceManager.cpp" />
+    <ClCompile Include="Resource\ResourceStreamer.cpp" />
+    <ClCompile Include="Resource\Scene\Culling\SceneCullingManager.cpp" />
+    <ClCompile Include="Resource\Scene\Factory\SceneFactory.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Camera\CameraSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Grass\GrassSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\ISceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Light\LightSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Light\SunlightSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\MaterialSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Mesh\MeshSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Mesh\SkeletonMeshSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Particles\ParticlesSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Sky\HosekWilkieSky.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Sky\SkySceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Terrain\TerrainSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Item\Volume\VolumeSceneItem.cpp" />
+    <ClCompile Include="Resource\Scene\Loader\SceneResourceLoader.cpp" />
+    <ClCompile Include="Resource\Scene\SceneNode.cpp" />
+    <ClCompile Include="Resource\Scene\SceneResource.cpp" />
+    <ClCompile Include="Resource\Scene\SceneResourceManager.cpp" />
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\Preprocessor.cpp" />
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\ShaderBuilder.cpp" />
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\ShaderCacheManager.cpp" />
+    <ClCompile Include="Resource\ShaderBlueprint\Cache\ShaderProperties.cpp" />
+    <ClCompile Include="Resource\ShaderBlueprint\Loader\ShaderBlueprintResourceLoader.cpp" />
+    <ClCompile Include="Resource\ShaderBlueprint\ShaderBlueprintResourceManager.cpp" />
+    <ClCompile Include="Resource\ShaderPiece\Loader\ShaderPieceResourceLoader.cpp" />
+    <ClCompile Include="Resource\ShaderPiece\ShaderPieceResourceManager.cpp" />
+    <ClCompile Include="Resource\SkeletonAnimation\Loader\SkeletonAnimationResourceLoader.cpp" />
+    <ClCompile Include="Resource\SkeletonAnimation\SkeletonAnimationController.cpp" />
+    <ClCompile Include="Resource\SkeletonAnimation\SkeletonAnimationEvaluator.cpp" />
+    <ClCompile Include="Resource\SkeletonAnimation\SkeletonAnimationResourceManager.cpp" />
+    <ClCompile Include="Resource\Skeleton\Loader\SkeletonResourceLoader.cpp" />
+    <ClCompile Include="Resource\Skeleton\SkeletonResource.cpp" />
+    <ClCompile Include="Resource\Skeleton\SkeletonResourceManager.cpp" />
+    <ClCompile Include="Resource\Texture\Loader\CrnArrayTextureResourceLoader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\CrnTextureResourceLoader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Loader\ITextureResourceLoader.cpp" />
+    <ClCompile Include="Resource\Texture\Loader\KtxTextureResourceLoader.cpp" />
+    <ClCompile Include="Resource\Texture\Loader\Lz4DdsTextureResourceLoader.cpp" />
+    <ClCompile Include="Resource\Texture\TextureResourceManager.cpp" />
+    <ClCompile Include="Resource\VertexAttributes\Loader\VertexAttributesResourceLoader.cpp" />
+    <ClCompile Include="Resource\VertexAttributes\VertexAttributesResourceManager.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -34,12 +166,210 @@
     <ClCompile Include="VulkanRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Asset\Asset.h" />
+    <ClInclude Include="Asset\AssetManager.h" />
+    <ClInclude Include="Asset\AssetPackage.h" />
+    <ClInclude Include="Asset\Loader\AssetPackageFileFormat.h" />
+    <ClInclude Include="Asset\Loader\AssetPackageLoader.h" />
     <ClInclude Include="CommandLineArguments.h" />
-    <ClInclude Include="PlatformTypes.h" />
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="Core\File\DefaultFileManager.h" />
+    <ClInclude Include="Core\File\FileSystemHelper.h" />
+    <ClInclude Include="Core\File\IFile.h" />
+    <ClInclude Include="Core\File\IFileManager.h" />
+    <ClInclude Include="Core\File\MemoryFile.h" />
+    <ClInclude Include="Core\File\PhysicsFSFileManager.h" />
+    <ClInclude Include="Core\GetInvalid.h" />
+    <ClInclude Include="Core\IGraphicsDebugger.h" />
+    <ClInclude Include="Core\IProfiler.h" />
+    <ClInclude Include="Core\Loader.h" />
+    <ClInclude Include="Core\Mak eId.h" />
+    <ClInclude Include="Core\Manager.h" />
+    <ClInclude Include="Core\Math\EulerAngles.h" />
+    <ClInclude Include="Core\Math\Frustum.h" />
+    <ClInclude Include="Core\Math\Math.h" />
+    <ClInclude Include="Core\Math\Plane.h" />
+    <ClInclude Include="Core\Math\Transform.h" />
+    <ClInclude Include="Core\PackedElementManager.h" />
+    <ClInclude Include="Core\Platform\PlatformManager.h" />
+    <ClInclude Include="Core\Platform\PlatformTypes.h" />
+    <ClInclude Include="Core\Platform\WindowsHeader.h" />
+    <ClInclude Include="Core\RemoteryProfiler.h" />
+    <ClInclude Include="Core\RenderDocGraphicsDebugger.h" />
+    <ClInclude Include="Core\Renderer\FramebufferManager.h" />
+    <ClInclude Include="Core\Renderer\FramebufferSignature.h" />
+    <ClInclude Include="Core\Renderer\RenderPassManager.h" />
+    <ClInclude Include="Core\Renderer\RenderTargetTextureManager.h" />
+    <ClInclude Include="Core\Renderer\RenderTargetTextureSignature.h" />
+    <ClInclude Include="Core\StringId.h" />
+    <ClInclude Include="Core\SwizzleVectorElementRemove.h" />
+    <ClInclude Include="Core\Thread\ThreadPool.h" />
+    <ClInclude Include="Core\Time\Stopwatch.h" />
+    <ClInclude Include="Core\Time\TimeManager.h" />
+    <ClInclude Include="DebugGui\DebugGuiHelper.h" />
+    <ClInclude Include="DebugGui\DebugGuiManager.h" />
+    <ClInclude Include="DebugGui\Detail\DebugGuiManagerWindows.h" />
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_GLSL_410.h" />
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_GLSL_450.h" />
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_GLSL_ES3.h" />
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_HLSL_D3D10_D3D11_D3D12.h" />
+    <ClInclude Include="DebugGui\Detail\Shader\DebugGui_Null.h" />
+    <ClInclude Include="DebugGui\ImGuiLog.h" />
+    <ClInclude Include="Export.h" />
+    <ClInclude Include="IRendererRuntime.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="RendererInstance.h" />
+    <ClInclude Include="RendererRuntimeImpl.h" />
+    <ClInclude Include="RendererRuntimeInstance.h" />
+    <ClInclude Include="RenderQueue\Renderable.h" />
+    <ClInclude Include="RenderQueue\RenderableManager.h" />
+    <ClInclude Include="RenderQueue\RenderQueue.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorChannel.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorFramebuffer.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorNodeInstance.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorNodeResource.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorNodeResourceManager.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorRenderTargetTexture.h" />
+    <ClInclude Include="Resource\CompositorNode\CompositorTarget.h" />
+    <ClInclude Include="Resource\CompositorNode\Loader\CompositorNodeFileFormat.h" />
+    <ClInclude Include="Resource\CompositorNode\Loader\CompositorNodeResourceLoader.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Clear\CompositorInstancePassClear.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Clear\CompositorResourcePassClear.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\CompositorPassFactory.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Compute\CompositorInstancePassCompute.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Compute\CompositorResourcePassCompute.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Copy\CompositorInstancePassCopy.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Copy\CompositorResourcePassCopy.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\DebugGui\CompositorInstancePassDebugGui.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\DebugGui\CompositorResourcePassDebugGui.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorInstancePassGenerateMipmaps.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\GenerateMipmaps\CompositorResourcePassGenerateMipmaps.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ICompositorInstancePass.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ICompositorPassFactory.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ICompositorResourcePass.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorInstancePassResolveMultisample.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ResolveMultisample\CompositorResourcePassResolveMultisample.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Scene\CompositorInstancePassScene.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\Scene\CompositorResourcePassScene.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ShadowMap\CompositorInstancePassShadowMap.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\ShadowMap\CompositorResourcePassShadowMap.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorInstancePassVrHiddenAreaMesh.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\CompositorResourcePassVrHiddenAreaMesh.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_GLSL_410.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_GLSL_ES3.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_HLSL_D3D10_D3D11_D3D12.h" />
+    <ClInclude Include="Resource\CompositorNode\Pass\VrHiddenAreaMesh\Shader\VrHiddenAreaMesh_Null.h" />
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorContextData.h" />
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorWorkspaceInstance.h" />
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorWorkspaceResource.h" />
+    <ClInclude Include="Resource\CompositorWorkspace\CompositorWorkspaceResourceManager.h" />
+    <ClInclude Include="Resource\CompositorWorkspace\Loader\CompositorWorkspaceFileFormat.h" />
+    <ClInclude Include="Resource\CompositorWorkspace\Loader\CompositorWorkspaceResourceLoader.h" />
+    <ClInclude Include="Resource\IResource.h" />
+    <ClInclude Include="Resource\IResourceListener.h" />
+    <ClInclude Include="Resource\IResourceLoader.h" />
+    <ClInclude Include="Resource\IResourceManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\IndirectBufferManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\LightBufferManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\MaterialBufferSlot.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\PassBufferManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\TextureInstanceBufferManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\BufferManager\UniformInstanceBufferManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCache.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCacheManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateCompiler.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\ComputePipelineStateSignature.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCache.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCacheManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateCompiler.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsPipelineStateSignature.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsProgramCache.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Cache\GraphicsProgramCacheManager.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Listener\IMaterialBlueprintResourceListener.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Listener\MaterialBlueprintResourceListener.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Loader\MaterialBlueprintFileFormat.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\Loader\MaterialBlueprintResourceLoader.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\MaterialBlueprintResource.h" />
+    <ClInclude Include="Resource\MaterialBlueprint\MaterialBlueprintResourceManager.h" />
+    <ClInclude Include="Resource\Material\Loader\MaterialFileFormat.h" />
+    <ClInclude Include="Resource\Material\Loader\MaterialResourceLoader.h" />
+    <ClInclude Include="Resource\Material\MaterialProperties.h" />
+    <ClInclude Include="Resource\Material\MaterialProperty.h" />
+    <ClInclude Include="Resource\Material\MaterialPropertyValue.h" />
+    <ClInclude Include="Resource\Material\MaterialResource.h" />
+    <ClInclude Include="Resource\Material\MaterialResourceManager.h" />
+    <ClInclude Include="Resource\Material\MaterialTechnique.h" />
+    <ClInclude Include="Resource\Mesh\Loader\IMeshResourceLoader.h" />
+    <ClInclude Include="Resource\Mesh\Loader\MeshFileFormat.h" />
+    <ClInclude Include="Resource\Mesh\Loader\MeshResourceLoader.h" />
+    <ClInclude Include="Resource\Mesh\MeshResource.h" />
+    <ClInclude Include="Resource\Mesh\MeshResourceManager.h" />
+    <ClInclude Include="Resource\Mesh\SubMesh.h" />
+    <ClInclude Include="Resource\RendererResourceManager.h" />
+    <ClInclude Include="Resource\ResourceManager.h" />
+    <ClInclude Include="Resource\ResourceManagerTemplate.h" />
+    <ClInclude Include="Resource\ResourceStreamer.h" />
+    <ClInclude Include="Resource\Scene\Culling\SceneCullingManager.h" />
+    <ClInclude Include="Resource\Scene\Culling\SceneItemSet.h" />
+    <ClInclude Include="Resource\Scene\Factory\ISceneFactory.h" />
+    <ClInclude Include="Resource\Scene\Factory\SceneFactory.h" />
+    <ClInclude Include="Resource\Scene\Item\Camera\CameraSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Grass\GrassSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\ISceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Light\LightSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Light\SunlightSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\MaterialSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Mesh\MeshSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Mesh\SkeletonMeshSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Particles\ParticlesSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Sky\ArHosekSkyModelData_RGB.h" />
+    <ClInclude Include="Resource\Scene\Item\Sky\HosekWilkieSky.h" />
+    <ClInclude Include="Resource\Scene\Item\Sky\SkySceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Terrain\TerrainSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Item\Volume\VolumeSceneItem.h" />
+    <ClInclude Include="Resource\Scene\Loader\SceneFileFormat.h" />
+    <ClInclude Include="Resource\Scene\Loader\SceneResourceLoader.h" />
+    <ClInclude Include="Resource\Scene\SceneNode.h" />
+    <ClInclude Include="Resource\Scene\SceneResource.h" />
+    <ClInclude Include="Resource\Scene\SceneResourceManager.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\Preprocessor.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderBuilder.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderCache.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderCacheManager.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Cache\ShaderProperties.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\GraphicsShaderType.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Loader\ShaderBlueprintFileFormat.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\Loader\ShaderBlueprintResourceLoader.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\ShaderBlueprintResource.h" />
+    <ClInclude Include="Resource\ShaderBlueprint\ShaderBlueprintResourceManager.h" />
+    <ClInclude Include="Resource\ShaderPiece\Loader\ShaderPieceFileFormat.h" />
+    <ClInclude Include="Resource\ShaderPiece\Loader\ShaderPieceResourceLoader.h" />
+    <ClInclude Include="Resource\ShaderPiece\ShaderPieceResource.h" />
+    <ClInclude Include="Resource\ShaderPiece\ShaderPieceResourceManager.h" />
+    <ClInclude Include="Resource\SkeletonAnimation\Loader\SkeletonAnimationFileFormat.h" />
+    <ClInclude Include="Resource\SkeletonAnimation\Loader\SkeletonAnimationResourceLoader.h" />
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationController.h" />
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationEvaluator.h" />
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationResource.h" />
+    <ClInclude Include="Resource\SkeletonAnimation\SkeletonAnimationResourceManager.h" />
+    <ClInclude Include="Resource\Skeleton\Loader\SkeletonFileFormat.h" />
+    <ClInclude Include="Resource\Skeleton\Loader\SkeletonResourceLoader.h" />
+    <ClInclude Include="Resource\Skeleton\SkeletonResource.h" />
+    <ClInclude Include="Resource\Skeleton\SkeletonResourceManager.h" />
+    <ClInclude Include="Resource\Texture\Loader\CrnArrayFileFormat.h" />
+    <ClInclude Include="Resource\Texture\Loader\CrnArrayTextureResourceLoader.h" />
+    <ClInclude Include="Resource\Texture\Loader\CrnTextureResourceLoader.h" />
+    <ClInclude Include="Resource\Texture\Loader\ITextureResourceLoader.h" />
+    <ClInclude Include="Resource\Texture\Loader\KtxTextureResourceLoader.h" />
+    <ClInclude Include="Resource\Texture\Loader\Lz4DdsTextureResourceLoader.h" />
+    <ClInclude Include="Resource\Texture\TextureResource.h" />
+    <ClInclude Include="Resource\Texture\TextureResourceManager.h" />
+    <ClInclude Include="Resource\VertexAttributes\Loader\VertexAttributesFileFormat.h" />
+    <ClInclude Include="Resource\VertexAttributes\Loader\VertexAttributesResourceLoader.h" />
+    <ClInclude Include="Resource\VertexAttributes\VertexAttributesResource.h" />
+    <ClInclude Include="Resource\VertexAttributes\VertexAttributesResourceManager.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="WindowsHeader.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -115,13 +445,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -133,13 +463,13 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -151,14 +481,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -172,14 +502,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)3rdparty\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>

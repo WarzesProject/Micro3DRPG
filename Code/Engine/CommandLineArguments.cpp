@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CommandLineArguments.h"
-#include "WindowsHeader.h"
+#include "Core/Platform/WindowsHeader.h"
 
 CommandLineArguments::CommandLineArguments()
 {

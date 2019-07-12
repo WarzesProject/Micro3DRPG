@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="glslang\glslangUnityBuild1.cpp" />
+    <ClCompile Include="glslang\glslangUnityBuild2.cpp" />
+    <ClCompile Include="glslang\glslangUnityBuild3.cpp" />
+    <ClCompile Include="smol-v\smolv.cpp" />
+    <ClCompile Include="temp.cpp" />
+    <ClCompile Include="lz4\xxhash.c">
+      <Filter>lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4\lz4.c">
+      <Filter>lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4\lz4frame.c">
+      <Filter>lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4\lz4hc.c">
+      <Filter>lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuizmo\ImGuizmo.cpp" />
+    <ClCompile Include="MojoShader\mojoshader_preprocessor.cpp">
+      <Filter>MojoShader</Filter>
+    </ClCompile>
+    <ClCompile Include="MojoShader\mojoshader_common.cpp">
+      <Filter>MojoShader</Filter>
+    </ClCompile>
+    <ClCompile Include="MojoShader\mojoshader_lexer.cpp">
+      <Filter>MojoShader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lz4">
+      <UniqueIdentifier>{0476df03-7a35-44a8-bbab-c913d0e2b617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{857a3e30-1602-40e4-bae5-3119ec214131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MojoShader">
+      <UniqueIdentifier>{b55caa22-819a-45f9-aaab-5b68489f984d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

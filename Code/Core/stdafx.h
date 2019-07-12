@@ -33,6 +33,15 @@
 #	pragma warning(push, 1)
 #endif
 
+#define GLM_FORCE_CXX17
+#define GLM_FORCE_INLINE
+#define GLM_FORCE_SIMD_AVX2
+#define GLM_FORCE_XYZW_ONLY
+#define GLM_FORCE_LEFT_HANDED
+#define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#define GLM_FORCE_RADIANS
+#define GLM_ENABLE_EXPERIMENTAL
+
 #if SE_COMPILER_MSVC
 #	pragma warning(pop)
 #endif
