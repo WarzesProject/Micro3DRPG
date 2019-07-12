@@ -3,16 +3,106 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ExampleRunner.cpp">
+      <Filter>example</Filter>
+    </ClCompile>
+    <ClCompile Include="Basics\FirstTriangle\FirstTriangle.cpp">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ApplicationImplWindows.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Color4.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\CommandLineArguments.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ExampleBase.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\IApplication.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\IApplicationRenderer.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\IApplicationRendererRuntime.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\ApplicationImplSdl2.cpp">
+      <Filter>example\Framework</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ExampleRunner.h">
+      <Filter>example</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle.h">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_410.h">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_450.h">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_ES3.h">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_HLSL_D3D9_D3D10_D3D11_D3D12.h">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_Null.h">
+      <Filter>example\Basic\FirstTriangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ApplicationImplWindows.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Color4.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\CommandLineArguments.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ExampleBase.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\IApplication.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\IApplicationFrontend.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\IApplicationImpl.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\IApplicationRenderer.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\IApplicationRendererRuntime.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\PlatformTypes.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\ApplicationImplSdl2.h">
+      <Filter>example\Framework</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
       <UniqueIdentifier>{f930d0fd-62fd-42ab-abfd-714a574611f3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="example\Shader">
-      <UniqueIdentifier>{32177160-ab92-4457-ab30-f1d50fdd2000}</UniqueIdentifier>
+    <Filter Include="example\Basic">
+      <UniqueIdentifier>{d564c0d4-f7fa-43ae-9c75-93d988e6a0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\Basic\FirstTriangle">
+      <UniqueIdentifier>{003eef17-aa59-4888-924e-6a942524ae70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\Framework">
+      <UniqueIdentifier>{dbfbf449-07d0-4715-bef0-605dcbb10f9b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -37,6 +37,28 @@
     <ClCompile Include="MojoShader\mojoshader_lexer.cpp">
       <Filter>MojoShader</Filter>
     </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs_unicode.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs_archiver_dir.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs_archiver_unpacked.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs_archiver_zip.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs_byteorder.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsFS\physfs_platform_windows.c">
+      <Filter>PhysicsFS</Filter>
+    </ClCompile>
+    <ClCompile Include="Remotery\Remotery.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="lz4">
@@ -47,6 +69,9 @@
     </Filter>
     <Filter Include="MojoShader">
       <UniqueIdentifier>{b55caa22-819a-45f9-aaab-5b68489f984d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysicsFS">
+      <UniqueIdentifier>{515b33e1-b99d-4189-a314-2d5a3ffe6190}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

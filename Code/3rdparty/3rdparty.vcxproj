@@ -33,6 +33,14 @@
     <ClCompile Include="MojoShader\mojoshader_common.cpp" />
     <ClCompile Include="MojoShader\mojoshader_lexer.cpp" />
     <ClCompile Include="MojoShader\mojoshader_preprocessor.cpp" />
+    <ClCompile Include="PhysicsFS\physfs.c" />
+    <ClCompile Include="PhysicsFS\physfs_archiver_dir.c" />
+    <ClCompile Include="PhysicsFS\physfs_archiver_unpacked.c" />
+    <ClCompile Include="PhysicsFS\physfs_archiver_zip.c" />
+    <ClCompile Include="PhysicsFS\physfs_byteorder.c" />
+    <ClCompile Include="PhysicsFS\physfs_platform_windows.c" />
+    <ClCompile Include="PhysicsFS\physfs_unicode.c" />
+    <ClCompile Include="Remotery\Remotery.c" />
     <ClCompile Include="smol-v\smolv.cpp" />
     <ClCompile Include="temp.cpp" />
   </ItemGroup>

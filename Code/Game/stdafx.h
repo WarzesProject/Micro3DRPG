@@ -45,17 +45,23 @@
 #define GLM_FORCE_RADIANS
 #define GLM_ENABLE_EXPERIMENTAL
 
+#include <SDL2/SDL.h>
+
 #if SE_COMPILER_MSVC
 #	pragma warning(pop)
 #endif
 //=============================================================================
 // engine other header
 //=============================================================================
+#define SDL2_FOUND
 #include <Core/IAllocator.h>
 #include <Core/ILog.h>
 #include <Core/IAssert.h>
 #include <Core/MakeID.h>
-#include <Engine/CommandLineArguments.h>
+#include <Core/DefaultAllocator.h>
+#include <Core/DefaultAssert.h>
+#include <Core/DefaultLog.h>
+//#include <Engine/CommandLineArguments.h> // дублирование
 #include <Engine/Core/Platform/WindowsHeader.h>
 #include <Engine/Renderer.h>
 #include <Engine/RendererInstance.h>

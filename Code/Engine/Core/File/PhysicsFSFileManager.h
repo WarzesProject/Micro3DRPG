@@ -39,7 +39,7 @@ namespace Renderer
 //[-------------------------------------------------------]
 //[ Anonymous detail namespace                            ]
 //[-------------------------------------------------------]
-namespace
+namespace T
 {
 	namespace detail
 	{
@@ -354,17 +354,17 @@ namespace RendererRuntime
 				if (mOwnsPhysicsFSInstance && 0 == PHYSFS_setWriteDir(absoluteRootDirectory.c_str()))
 				{
 					// Error!
-					::detail::writePhysicsFSErrorToLog(mLog);
+					T::detail::writePhysicsFSErrorToLog(mLog);
 				}
 
 				// Setup local data mount point
-				createDirectories(::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT);
-				mountDirectory((absoluteRootDirectory + '/' + ::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT).c_str(), ::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT);
+				createDirectories(T::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT);
+				mountDirectory((absoluteRootDirectory + '/' + T::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT).c_str(), T::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT);
 			}
 			else
 			{
 				// Error!
-				::detail::writePhysicsFSErrorToLog(mLog);
+				T::detail::writePhysicsFSErrorToLog(mLog);
 			}
 		}
 
@@ -378,7 +378,7 @@ namespace RendererRuntime
 			if (mOwnsPhysicsFSInstance && 0 == PHYSFS_deinit())
 			{
 				// Error!
-				::detail::writePhysicsFSErrorToLog(mLog);
+				T::detail::writePhysicsFSErrorToLog(mLog);
 			}
 		}
 
@@ -389,7 +389,7 @@ namespace RendererRuntime
 	public:
 		[[nodiscard]] inline virtual const char* getLocalDataMountPoint() const override
 		{
-			return ::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT;
+			return T::detail::PHYSICSFS_LOCAL_DATA_MOUNT_POINT;
 		}
 
 		[[nodiscard]] inline virtual const char* getMountPoint(const char* mountPoint) const override
@@ -408,7 +408,7 @@ namespace RendererRuntime
 			if (0 == PHYSFS_mount(absoluteDirectoryName, mountPoint, appendToPath))
 			{
 				// Error!
-				::detail::writePhysicsFSErrorToLog(mLog);
+				T::detail::writePhysicsFSErrorToLog(mLog);
 				return false;
 			}
 
@@ -529,7 +529,7 @@ namespace RendererRuntime
 			{
 				// Error!
 				assert(false && "Failed to get PhysicsFS last file modification time");
-				::detail::writePhysicsFSErrorToLog(mLog);
+				T::detail::writePhysicsFSErrorToLog(mLog);
 				return 0;
 			}
 			else
@@ -549,7 +549,7 @@ namespace RendererRuntime
 			{
 				// Error!
 				assert(false && "Failed to get PhysicsFS file size");
-				::detail::writePhysicsFSErrorToLog(mLog);
+				T::detail::writePhysicsFSErrorToLog(mLog);
 				return 0;
 			}
 			else
@@ -575,14 +575,14 @@ namespace RendererRuntime
 			assert(nullptr != virtualFilename);
 
 			// Open file
-			::detail::PhysicsFSFile* file = nullptr;
+			T::detail::PhysicsFSFile* file = nullptr;
 			if (FileMode::READ == fileMode)
 			{
-				file = new ::detail::PhysicsFSReadFile(virtualFilename);
+				file = new T::detail::PhysicsFSReadFile(virtualFilename);
 			}
 			else
 			{
-				file = new ::detail::PhysicsFSWriteFile(virtualFilename);
+				file = new T::detail::PhysicsFSWriteFile(virtualFilename);
 			}
 			if (file->isInvalid())
 			{
@@ -609,7 +609,7 @@ namespace RendererRuntime
 				--mNumberOfCurrentlyOpenedFiles;
 				assert((mNumberOfCurrentlyOpenedFiles >= 0) && "Error, more files closed as opened");
 			#endif
-			delete static_cast< ::detail::PhysicsFSFile*>(&file);
+			delete static_cast< T::detail::PhysicsFSFile*>(&file);
 		}
 
 

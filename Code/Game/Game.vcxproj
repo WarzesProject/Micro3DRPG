@@ -101,7 +101,7 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <SDLCheck>false</SDLCheck>
@@ -120,7 +120,7 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <SDLCheck>false</SDLCheck>
@@ -140,7 +140,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <SDLCheck>false</SDLCheck>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -162,7 +162,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir);$(SolutionDir)Engine\;$(SolutionDir)3rdparty\;$(SolutionDir)3rdparty\glm\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <SDLCheck>false</SDLCheck>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -177,6 +177,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Basics\FirstTriangle\FirstTriangle.cpp" />
+    <ClCompile Include="ExampleRunner.cpp" />
+    <ClCompile Include="Framework\ApplicationImplSdl2.cpp" />
+    <ClCompile Include="Framework\ApplicationImplWindows.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Framework\Color4.cpp" />
+    <ClCompile Include="Framework\CommandLineArguments.cpp" />
+    <ClCompile Include="Framework\ExampleBase.cpp" />
+    <ClCompile Include="Framework\IApplication.cpp" />
+    <ClCompile Include="Framework\IApplicationRenderer.cpp" />
+    <ClCompile Include="Framework\IApplicationRendererRuntime.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -186,6 +199,24 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle.h" />
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_410.h" />
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_450.h" />
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_GLSL_ES3.h" />
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_HLSL_D3D9_D3D10_D3D11_D3D12.h" />
+    <ClInclude Include="Basics\FirstTriangle\FirstTriangle_Null.h" />
+    <ClInclude Include="ExampleRunner.h" />
+    <ClInclude Include="Framework\ApplicationImplSdl2.h" />
+    <ClInclude Include="Framework\ApplicationImplWindows.h" />
+    <ClInclude Include="Framework\Color4.h" />
+    <ClInclude Include="Framework\CommandLineArguments.h" />
+    <ClInclude Include="Framework\ExampleBase.h" />
+    <ClInclude Include="Framework\IApplication.h" />
+    <ClInclude Include="Framework\IApplicationFrontend.h" />
+    <ClInclude Include="Framework\IApplicationImpl.h" />
+    <ClInclude Include="Framework\IApplicationRenderer.h" />
+    <ClInclude Include="Framework\IApplicationRendererRuntime.h" />
+    <ClInclude Include="Framework\PlatformTypes.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

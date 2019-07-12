@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
-//#include "ExampleRunner.h"
+#include "ExampleRunner.h"
+#include "CommandLineArguments.h"
 
 //-----------------------------------------------------------------------------
 #if SE_COMPILER_MSVC
