@@ -26,7 +26,7 @@
 //	#ifdef RENDERER_RUNTIME_IMGUI
 //		#include "Runtime/ImGuiExampleSelector/ImGuiExampleSelector.h"
 //	#endif
-//	#include "Runtime/FirstMesh/FirstMesh.h"
+	#include "Runtime/FirstMesh/FirstMesh.h"
 //	#include "Runtime/FirstCompositor/FirstCompositor.h"
 //	#include "Runtime/FirstScene/FirstScene.h"
 //	#include "Advanced/InstancedCubes/InstancedCubes.h"
@@ -96,19 +96,19 @@ ExampleRunner::ExampleRunner() :
 	//// Advanced
 	//addExample("FirstGpgpu",					&runBasicExample<FirstGpgpu>,					supportsAllRenderer);
 	//addExample("IcosahedronTessellation",		&runRenderExample<IcosahedronTessellation>,		onlyShaderModel5Plus);
-	#ifdef RENDERER_RUNTIME
+//	#ifdef RENDERER_RUNTIME
 		// Renderer runtime
-		#ifdef RENDERER_RUNTIME_IMGUI
-			addExample("ImGuiExampleSelector",	&runRenderRuntimeExample<ImGuiExampleSelector>,	supportsAllRenderer);
-		#endif
+		//#ifdef RENDERER_RUNTIME_IMGUI
+		//	addExample("ImGuiExampleSelector",	&runRenderRuntimeExample<ImGuiExampleSelector>,	supportsAllRenderer);
+		//#endif
 		addExample("FirstMesh",					&runRenderRuntimeExample<FirstMesh>,			supportsAllRenderer);
-		addExample("FirstCompositor",			&runRenderRuntimeExample<FirstCompositor>,		supportsAllRenderer);
-		addExample("FirstScene",				&runRenderRuntimeExample<FirstScene>,			supportsAllRenderer);
-		addExample("InstancedCubes",			&runRenderRuntimeExample<InstancedCubes>,		supportsAllRenderer);
+		//addExample("FirstCompositor",			&runRenderRuntimeExample<FirstCompositor>,		supportsAllRenderer);
+		//addExample("FirstScene",				&runRenderRuntimeExample<FirstScene>,			supportsAllRenderer);
+		//addExample("InstancedCubes",			&runRenderRuntimeExample<InstancedCubes>,		supportsAllRenderer);
 		mDefaultExampleName = "ImGuiExampleSelector";
-	#else
+//	#else
 		mDefaultExampleName = "FirstTriangle";
-	#endif
+//	#endif
 
 	#ifdef RENDERER_NULL
 		mAvailableRenderers.insert("Null");
@@ -143,7 +143,7 @@ int ExampleRunner::run(const CommandLineArguments& commandLineArguments)
 	do
 	{
 		// Run current example
-		mCurrentExampleName = "FirstTexture";
+		mCurrentExampleName = "FirstMesh";
 
 		result = runExample(mCurrentRendererName, mCurrentExampleName);
 		if (0 == result && !mNextRendererName.empty() && !mNextExampleName.empty())

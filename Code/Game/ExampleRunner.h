@@ -6,6 +6,7 @@
 //[-------------------------------------------------------]
 #include "Framework/PlatformTypes.h"
 #include "Framework/IApplicationRenderer.h"
+#include "Framework/IApplicationRendererRuntime.h"
 
 // Disable warnings in external headers, we can't fix them
 PRAGMA_WARNING_PUSH

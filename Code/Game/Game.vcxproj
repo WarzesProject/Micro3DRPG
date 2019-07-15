@@ -192,6 +192,7 @@
     <ClCompile Include="Framework\IApplicationRenderer.cpp" />
     <ClCompile Include="Framework\IApplicationRendererRuntime.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Runtime\FirstMesh\FirstMesh.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -224,6 +225,12 @@
     <ClInclude Include="Framework\IApplicationRenderer.h" />
     <ClInclude Include="Framework\IApplicationRendererRuntime.h" />
     <ClInclude Include="Framework\PlatformTypes.h" />
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh.h" />
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_410.h" />
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_450.h" />
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_ES3.h" />
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_HLSL_D3D10_D3D11_D3D12.h" />
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_Null.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

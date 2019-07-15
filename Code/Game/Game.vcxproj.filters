@@ -36,6 +36,9 @@
     <ClCompile Include="Basics\FirstTexture\FirstTexture.cpp">
       <Filter>example\Basic\FirstTexture</Filter>
     </ClCompile>
+    <ClCompile Include="Runtime\FirstMesh\FirstMesh.cpp">
+      <Filter>example\Runtime</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -111,6 +114,24 @@
     <ClInclude Include="Basics\FirstTexture\FirstTexture_Null.h">
       <Filter>example\Basic\FirstTexture</Filter>
     </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_HLSL_D3D10_D3D11_D3D12.h">
+      <Filter>example\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_Null.h">
+      <Filter>example\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh.h">
+      <Filter>example\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_410.h">
+      <Filter>example\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_450.h">
+      <Filter>example\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_ES3.h">
+      <Filter>example\Runtime</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
@@ -127,6 +148,9 @@
     </Filter>
     <Filter Include="example\Basic\FirstTexture">
       <UniqueIdentifier>{34554dc6-8300-457c-bdc6-0b776fe9b2bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\Runtime">
+      <UniqueIdentifier>{e9e70e35-0a59-4818-bbe1-4b5c61903616}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
