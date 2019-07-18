@@ -12,7 +12,7 @@
 #endif
 #include <crunch/inc/crn_decomp.h>
 #include <crunch/inc/dds_defs.h>
-// из-за говнокодеров из юнити написавших весь код crunch в h заголовке (ломается линковка) пришлось сделать такой хак:
+// из-за говнокодеров написавших весь код crunch в h заголовке (ломается линковка) пришлось сделать такой хак:
 #include "Resource/Texture/Loader/CrnArrayTextureResourceLoader.cpp"
 
 

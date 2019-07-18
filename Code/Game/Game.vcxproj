@@ -110,7 +110,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;$(SolutionDir)3rdparty\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -129,7 +129,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;$(SolutionDir)3rdparty\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -151,7 +151,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;$(SolutionDir)3rdparty\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -173,7 +173,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdparty\lib\$(PlatformName)\;$(SolutionDir)..\_lib\$(Configuration)\$(PlatformName)\;$(SolutionDir)3rdparty\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -184,6 +184,8 @@
     <ClCompile Include="Framework\ApplicationImplWindows.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Framework\Color4.cpp" />
     <ClCompile Include="Framework\CommandLineArguments.cpp" />
@@ -191,8 +193,17 @@
     <ClCompile Include="Framework\IApplication.cpp" />
     <ClCompile Include="Framework\IApplicationRenderer.cpp" />
     <ClCompile Include="Framework\IApplicationRendererRuntime.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Runtime\FirstMesh\FirstMesh.cpp" />
+    <ClCompile Include="Runtime\FirstScene\FirstScene.cpp" />
+    <ClCompile Include="Runtime\FirstScene\FreeCameraController.cpp" />
+    <ClCompile Include="Runtime\FirstScene\VrController.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -225,12 +236,17 @@
     <ClInclude Include="Framework\IApplicationRenderer.h" />
     <ClInclude Include="Framework\IApplicationRendererRuntime.h" />
     <ClInclude Include="Framework\PlatformTypes.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_410.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_450.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_ES3.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_HLSL_D3D10_D3D11_D3D12.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_Null.h" />
+    <ClInclude Include="Runtime\FirstScene\FirstScene.h" />
+    <ClInclude Include="Runtime\FirstScene\FreeCameraController.h" />
+    <ClInclude Include="Runtime\FirstScene\IController.h" />
+    <ClInclude Include="Runtime\FirstScene\VrController.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2584,19 +2584,19 @@ extern "C" {
 #ifdef ARCHITECTURE_X64
 #ifdef RENDERER_DIRECT3D11_EXPORTS
 	// Dynamic library is using "Multi-threaded DLL (/MD)"
-#pragma comment(lib, "amd_ags_x64_2017_MD.lib")
+#pragma comment(lib, "AGS_SDK/Windows_x64/Library/amd_ags_x64_2017_MD.lib")
 #else
 	// Static library is using "Multi-threaded (/MT)"
-#pragma comment(lib, "amd_ags_x64_2017_MT.lib")
+#pragma comment(lib, "AGS_SDK/Windows_x64/Library/amd_ags_x64_2017_MT.lib")
 #endif
 #else
-#ifdef RENDERER_DIRECT3D11_EXPORTS
+//#ifdef RENDERER_DIRECT3D11_EXPORTS
 	// Dynamic library is using "Multi-threaded DLL (/MD)"
-#pragma comment(lib, "amd_ags_x86_2017_MD.lib")
-#else
+#pragma comment(lib, "AGS_SDK/Windows_x86/Library/amd_ags_x86_2017_MD.lib")
+//#else
 	// Static library is using "Multi-threaded (/MT)"
-#pragma comment(lib, "amd_ags_x86_2017_MT.lib")
-#endif
+//#pragma comment(lib, "AGS_SDK/Windows_x86/Library/amd_ags_x86_2017_MT.lib")
+//#endif
 #endif
 #endif
 	Renderer::IAllocator* g_AmdAgsAllocator = nullptr;	///< Evil global variable since AMD AGS doesn't allow to pass in user data to the allocator functions

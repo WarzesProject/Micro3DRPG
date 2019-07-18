@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DeviceInput.cpp" />
     <ClCompile Include="glslang\glslangUnityBuild1.cpp" />
     <ClCompile Include="glslang\glslangUnityBuild2.cpp" />
     <ClCompile Include="glslang\glslangUnityBuild3.cpp" />
@@ -43,6 +44,9 @@
     <ClCompile Include="Remotery\Remotery.c" />
     <ClCompile Include="smol-v\smolv.cpp" />
     <ClCompile Include="temp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceInput.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

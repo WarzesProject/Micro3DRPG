@@ -28,7 +28,7 @@
 //	#endif
 	#include "Runtime/FirstMesh/FirstMesh.h"
 //	#include "Runtime/FirstCompositor/FirstCompositor.h"
-//	#include "Runtime/FirstScene/FirstScene.h"
+	#include "Runtime/FirstScene/FirstScene.h"
 //	#include "Advanced/InstancedCubes/InstancedCubes.h"
 //#endif
 
@@ -103,7 +103,7 @@ ExampleRunner::ExampleRunner() :
 		//#endif
 		addExample("FirstMesh",					&runRenderRuntimeExample<FirstMesh>,			supportsAllRenderer);
 		//addExample("FirstCompositor",			&runRenderRuntimeExample<FirstCompositor>,		supportsAllRenderer);
-		//addExample("FirstScene",				&runRenderRuntimeExample<FirstScene>,			supportsAllRenderer);
+		addExample("FirstScene",				&runRenderRuntimeExample<FirstScene>,			supportsAllRenderer);
 		//addExample("InstancedCubes",			&runRenderRuntimeExample<InstancedCubes>,		supportsAllRenderer);
 		mDefaultExampleName = "ImGuiExampleSelector";
 //	#else
@@ -143,7 +143,7 @@ int ExampleRunner::run(const CommandLineArguments& commandLineArguments)
 	do
 	{
 		// Run current example
-		mCurrentExampleName = "FirstMesh";
+		mCurrentExampleName = "FirstScene";
 
 		result = runExample(mCurrentRendererName, mCurrentExampleName);
 		if (0 == result && !mNextRendererName.empty() && !mNextExampleName.empty())

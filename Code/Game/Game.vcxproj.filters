@@ -36,8 +36,18 @@
     <ClCompile Include="Basics\FirstTexture\FirstTexture.cpp">
       <Filter>example\Basic\FirstTexture</Filter>
     </ClCompile>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Runtime\FirstMesh\FirstMesh.cpp">
-      <Filter>example\Runtime</Filter>
+      <Filter>example\Runtime\FirstMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\FirstScene\FirstScene.cpp">
+      <Filter>example\Runtime\FirstScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\FirstScene\FreeCameraController.cpp">
+      <Filter>example\Runtime\FirstScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\FirstScene\VrController.cpp">
+      <Filter>example\Runtime\FirstScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -114,23 +124,36 @@
     <ClInclude Include="Basics\FirstTexture\FirstTexture_Null.h">
       <Filter>example\Basic\FirstTexture</Filter>
     </ClInclude>
-    <ClInclude Include="Runtime\FirstMesh\FirstMesh_HLSL_D3D10_D3D11_D3D12.h">
-      <Filter>example\Runtime</Filter>
-    </ClInclude>
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_Null.h">
-      <Filter>example\Runtime</Filter>
+      <Filter>example\Runtime\FirstMesh</Filter>
     </ClInclude>
     <ClInclude Include="Runtime\FirstMesh\FirstMesh.h">
-      <Filter>example\Runtime</Filter>
+      <Filter>example\Runtime\FirstMesh</Filter>
     </ClInclude>
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_410.h">
-      <Filter>example\Runtime</Filter>
+      <Filter>example\Runtime\FirstMesh</Filter>
     </ClInclude>
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_450.h">
-      <Filter>example\Runtime</Filter>
+      <Filter>example\Runtime\FirstMesh</Filter>
     </ClInclude>
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_GLSL_ES3.h">
-      <Filter>example\Runtime</Filter>
+      <Filter>example\Runtime\FirstMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstMesh\FirstMesh_HLSL_D3D10_D3D11_D3D12.h">
+      <Filter>example\Runtime\FirstMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstScene\FirstScene.h">
+      <Filter>example\Runtime\FirstScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstScene\FreeCameraController.h">
+      <Filter>example\Runtime\FirstScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstScene\IController.h">
+      <Filter>example\Runtime\FirstScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\FirstScene\VrController.h">
+      <Filter>example\Runtime\FirstScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +174,12 @@
     </Filter>
     <Filter Include="example\Runtime">
       <UniqueIdentifier>{e9e70e35-0a59-4818-bbe1-4b5c61903616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\Runtime\FirstMesh">
+      <UniqueIdentifier>{4a71b53e-acad-42b4-a10c-32ff418f7046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\Runtime\FirstScene">
+      <UniqueIdentifier>{32299bd8-3b4d-405a-9a9b-ef1b925ecd18}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

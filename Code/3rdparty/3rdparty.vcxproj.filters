@@ -59,6 +59,9 @@
       <Filter>PhysicsFS</Filter>
     </ClCompile>
     <ClCompile Include="Remotery\Remotery.c" />
+    <ClCompile Include="DeviceInput.cpp">
+      <Filter>DeviceInput</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="lz4">
@@ -73,5 +76,13 @@
     <Filter Include="PhysicsFS">
       <UniqueIdentifier>{515b33e1-b99d-4189-a314-2d5a3ffe6190}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DeviceInput">
+      <UniqueIdentifier>{450f299e-ca6d-498f-b5a0-700ab55c4c3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceInput.h">
+      <Filter>DeviceInput</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
