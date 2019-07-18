@@ -14,4 +14,6 @@ Thumbs.db
 /bin/*/Game_*.pdb
 /bin/*/Game_*.exp
 /bin/*/Game_*.lib
+/bin/*/Game_*.iobj
+/bin/*/Game_*.ipdb
 /bin/*/Log.txt
