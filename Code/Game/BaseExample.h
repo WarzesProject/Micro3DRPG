@@ -16,9 +16,7 @@ namespace RendererToolkit
 class BaseExample
 {
 	friend class GameRunner;
-public:
-	BaseExample() : /*mExampleRunner(nullptr),*/mApplicationFrontend(nullptr) {}
-	
+public:	
 	void setApplicationFrontend(AppRenderer* applicationFrontend)
 	{
 		mApplicationFrontend = applicationFrontend;
@@ -49,7 +47,5 @@ private:
 	Renderer::IGraphicsPipelineStatePtr	mGraphicsPipelineState;	///< Graphics pipeline state object (PSO), can be a null pointer
 	Renderer::IVertexArrayPtr			mVertexArray;			///< Vertex array object (VAO), can be a null pointer
 
-
-	//GameRunner*		  mExampleRunner;
-	AppRenderer* mApplicationFrontend;
+	AppRenderer* mApplicationFrontend = nullptr;
 };

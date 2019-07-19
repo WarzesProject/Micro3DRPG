@@ -1,18 +1,8 @@
 #include "stdafx.h"
 #include "AppRenderer.h"
-#include <Engine/RendererInstance.h>
 #include "BaseExample.h"
 #ifdef SDL2_FOUND
 #include "Framework/ApplicationImplSdl2.h"
-#elif defined _WIN32
-#include "Framework/ApplicationImplWindows.h"
-#elif defined __ANDROID__
-#warning TODO(co) The Android support is work - in - progress
-#elif defined LINUX
-#include "Framework/Linux/ApplicationImplLinux.h"
-#endif
-#if defined(RENDERER_RUNTIME) && defined(RENDERER_RUNTIME_GRAPHICS_DEBUGGER)
-#include <Engine/Core/RenderDocGraphicsDebugger.h>
 #endif
 
 extern Renderer::DefaultAllocator g_DefaultAllocator;
@@ -20,29 +10,9 @@ extern Renderer::DefaultLog	g_DefaultLog;
 extern Renderer::DefaultAssert g_DefaultAssert;
 
 AppRenderer::AppRenderer(const char* rendererName, BaseExample& exampleBase) 
-	:mApplicationImpl(nullptr)
-	, mExit(false)
-#if defined(RENDERER_RUNTIME) && defined(RENDERER_RUNTIME_GRAPHICS_DEBUGGER)
-	mGraphicsDebugger(nullptr),
-#endif
-	,mExampleBase(exampleBase),
-	mRendererContext(nullptr),
-	mRendererInstance(nullptr),
-	mRenderer(nullptr),
-	mMainSwapChain(nullptr)
+	: mExampleBase(exampleBase)
 {
-#ifdef SDL2_FOUND
 	mApplicationImpl = new AppWindowSDL(*this, rendererName);
-#elif defined _WIN32
-	mApplicationImpl = new ApplicationImplWindows(*this, windowTitle);
-#elif defined __ANDROID__
-	#warning TODO(co) The Android support is work - in - progress
-#elif defined LINUX
-	mApplicationImpl = new ApplicationImplLinux(*this, windowTitle);
-#else
-#error "Unsupported platform"
-#endif
-
 	mExampleBase.setApplicationFrontend(this);
 	strncpy(mRendererName, rendererName, 32);
 }
@@ -172,7 +142,6 @@ void AppRenderer::createRenderer()
 
 void AppRenderer::destroyRenderer()
 {
-	// Delete the renderer instance
 	if (nullptr != mMainSwapChain)
 	{
 		mMainSwapChain->releaseReference();
@@ -184,13 +153,6 @@ void AppRenderer::destroyRenderer()
 		mRendererInstance->destroyRenderer();
 	}
 
-	// Call base implementation after renderer was destroyed, needed at least under Linux see comments in private method "RendererInstance::loadRendererApiSharedLibrary()" for more details
-	// TODO(co): Try to find another solution which doesn't change the application flow which results in deinitialization been called twice
-#ifdef LINUX
-	IApplication::onDeinitialization();
-#endif
-
-	// Delete the renderer instance
 	delete mRendererInstance;
 	mRendererInstance = nullptr;
 	delete mRendererContext;
@@ -200,22 +162,13 @@ void AppRenderer::destroyRenderer()
 #endif
 }
 
-//[-------------------------------------------------------]
-//[ Private methods                                       ]
-//[-------------------------------------------------------]
 Renderer::IRenderer* AppRenderer::createRendererInstance(const char* rendererName)
 {
-	// Is the given pointer valid?
 	if (nullptr != rendererName)
 	{
 		bool loadRendererApiSharedLibrary = false;
 #ifdef _WIN32
 		mRendererContext = new Renderer::Context(g_DefaultLog, ::g_DefaultAssert, g_DefaultAllocator, getNativeWindowHandle());
-#elif LINUX
-		// Under Linux the OpenGL library interacts with the library from X11 so we need to load the library ourself instead letting it be loaded by the renderer instance
-		// -> See http://dri.sourceforge.net/doc/DRIuserguide.html "11.5 libGL.so and dlopen()"
-		loadRendererApiSharedLibrary = true;
-		mRendererContext = new Renderer::X11Context(log, ::detail::g_DefaultAssert, g_DefaultAllocator, getX11Display(), getNativeWindowHandle());
 #endif
 #if defined(RENDERER_RUNTIME) && defined(RENDERER_RUNTIME_GRAPHICS_DEBUGGER)
 		mGraphicsDebugger = new RendererRuntime::RenderDocGraphicsDebugger(*mRendererContext);
@@ -224,10 +177,8 @@ Renderer::IRenderer* AppRenderer::createRendererInstance(const char* rendererNam
 	}
 	Renderer::IRenderer* renderer = (nullptr != mRendererInstance) ? mRendererInstance->getRenderer() : nullptr;
 
-	// Is the renderer instance is properly initialized?
 	if (nullptr != renderer && !renderer->isInitialized())
 	{
-		// We are not interested in not properly initialized renderer instances, so get rid of the broken thing
 		renderer = nullptr;
 		delete mRendererInstance;
 		mRendererInstance = nullptr;
@@ -259,6 +210,5 @@ Renderer::IRenderer* AppRenderer::createRendererInstance(const char* rendererNam
 	}
 #endif
 
-	// Done
 	return renderer;
 }

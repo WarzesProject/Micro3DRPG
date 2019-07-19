@@ -56,7 +56,7 @@ protected:
 	void destroyRenderer();
 protected:
 #ifdef RENDERER_RUNTIME_GRAPHICS_DEBUGGER
-	RendererRuntime::IGraphicsDebugger*	mGraphicsDebugger;	///< Graphics debugger instance, can be a null pointer
+	RendererRuntime::IGraphicsDebugger*	mGraphicsDebugger = nullptr;	///< Graphics debugger instance, can be a null pointer
 #endif
 	BaseExample& mExampleBase;
 
@@ -65,12 +65,12 @@ private:
 
 private:
 	char						mRendererName[32];	///< Case sensitive ASCII name of the renderer to instance
-	Renderer::Context*			mRendererContext;	///< Renderer context, can be a null pointer
-	Renderer::RendererInstance* mRendererInstance;	///< Renderer instance, can be a null pointer
-	Renderer::IRenderer*		mRenderer;			///< Renderer instance, can be a null pointer, do not destroy the instance
-	Renderer::ISwapChain*		mMainSwapChain;		///< Main swap chain instance, can be a null pointer, release the instance if you no longer need it
+	Renderer::Context*			mRendererContext = nullptr;	///< Renderer context, can be a null pointer
+	Renderer::RendererInstance* mRendererInstance = nullptr;	///< Renderer instance, can be a null pointer
+	Renderer::IRenderer*		mRenderer = nullptr;			///< Renderer instance, can be a null pointer, do not destroy the instance
+	Renderer::ISwapChain*		mMainSwapChain = nullptr;		///< Main swap chain instance, can be a null pointer, release the instance if you no longer need it
 	Renderer::CommandBuffer		mCommandBuffer;		///< Command buffer
 
-	AppWindowSDL* mApplicationImpl;	///< Application implementation instance, always valid
-	bool			  mExit;			///< If "true", the application has been asked politely to shut down as soon as possible, else "false"
+	AppWindowSDL* mApplicationImpl = nullptr;	///< Application implementation instance, always valid
+	bool			  mExit = false;	///< If "true", the application has been asked politely to shut down as soon as possible, else "false"
 };
