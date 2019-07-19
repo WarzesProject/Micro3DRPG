@@ -57,6 +57,13 @@
     <ClCompile Include="GameApp.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="AppRenderer.cpp">
+      <Filter>New</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseExample.cpp">
+      <Filter>New</Filter>
+    </ClCompile>
+    <ClCompile Include="AppWindowSDL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -171,6 +178,13 @@
     <ClInclude Include="GameApp.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="AppRenderer.h">
+      <Filter>New</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseExample.h">
+      <Filter>New</Filter>
+    </ClInclude>
+    <ClInclude Include="AppWindowSDL.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
@@ -199,6 +213,9 @@
     </Filter>
     <Filter Include="Game">
       <UniqueIdentifier>{8777cd12-64fa-46a8-bef6-f092d54fc925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="New">
+      <UniqueIdentifier>{6790871f-1982-42ed-a370-d2541e85ecf9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -2,6 +2,8 @@
 #include "ExampleRunner.h"
 #include "CommandLineArguments.h"
 #include "Game.h"
+#include "BaseExample.h"
+#include "AppRenderer.h"
 
 #define SAMPLE 0
 
@@ -33,9 +35,8 @@ int programEntryPoint(const CommandLineArguments &commandLineArguments)
 #if SAMPLE
 	return ExampleRunner().run(commandLineArguments);
 #else
-	GameConfig config;
-	Game game(config);
-	return game.Run();
+	BaseExample exampleClass;
+	return AppRenderer("Direct3D11", exampleClass).run();
 #endif
 }
 //-----------------------------------------------------------------------------

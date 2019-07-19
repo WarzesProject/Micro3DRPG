@@ -31,7 +31,7 @@ private:
 	#endif
 
 private:
-	IApplication* mApplication;			///< The owner application instance, always valid
+	IApplication *mApplication;			///< The owner application instance, always valid
 	char		  mWindowTitle[64];		///< ASCII window title
 	SDL_Window*	  m_sdlWindow;			///< SDL2 handle, can be a null handler
 	bool		  mFirstUpdate;

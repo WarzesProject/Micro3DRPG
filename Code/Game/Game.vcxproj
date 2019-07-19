@@ -177,6 +177,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AppRenderer.cpp" />
+    <ClCompile Include="AppWindowSDL.cpp" />
+    <ClCompile Include="BaseExample.cpp" />
     <ClCompile Include="Basics\FirstTexture\FirstTexture.cpp" />
     <ClCompile Include="Basics\FirstTriangle\FirstTriangle.cpp" />
     <ClCompile Include="ExampleRunner.cpp" />
@@ -214,6 +217,9 @@
     <ClCompile Include="WindowSDL.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AppRenderer.h" />
+    <ClInclude Include="AppWindowSDL.h" />
+    <ClInclude Include="BaseExample.h" />
     <ClInclude Include="Basics\FirstTexture\FirstTexture.h" />
     <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_410.h" />
     <ClInclude Include="Basics\FirstTexture\FirstTexture_GLSL_450.h" />

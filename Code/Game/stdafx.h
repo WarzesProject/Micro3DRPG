@@ -12,8 +12,15 @@
 //=============================================================================
 #include <cstdint>
 #include <cassert>
-
 #include <functional>
+#include <map>
+#include <set>
+#include <vector>
+#include <string>
+#include <string_view>
+#include <array>
+#include <iostream>
+#include <algorithm>
 
 //=============================================================================
 // Platform header and config
@@ -48,6 +55,9 @@
 #define GLM_ENABLE_EXPERIMENTAL
 
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_syswm.h>
+
+#include <glm/glm.hpp>
 
 #if SE_COMPILER_MSVC
 #	pragma warning(pop)
@@ -63,7 +73,6 @@
 #include <Core/DefaultAllocator.h>
 #include <Core/DefaultAssert.h>
 #include <Core/DefaultLog.h>
-//#include <Engine/CommandLineArguments.h> // дублирование
 #include <Engine/Core/Platform/WindowsHeader.h>
 #include <Engine/Renderer.h>
 #include <Engine/RendererInstance.h>
