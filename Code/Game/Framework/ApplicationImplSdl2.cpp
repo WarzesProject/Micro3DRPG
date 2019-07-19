@@ -22,10 +22,10 @@ PRAGMA_WARNING_POP
 ApplicationImplSdl2::ApplicationImplSdl2(IApplication& application, const char* windowTitle) :
 	IApplicationImpl(application),
 	mApplication(&application),
-	mSdlWindow(nullptr),
+	m_sdlWindow(nullptr),
 	mFirstUpdate(true)
 	#ifdef RENDERER_RUNTIME_IMGUI
-		, mImGuiMousePressed{ false, false, false }
+		, m_imGuiMousePressed{ false, false, false }
 	#endif
 {
 	// Copy the given window title
@@ -47,16 +47,16 @@ void ApplicationImplSdl2::onInitialization()
 {
 	if (SDL_Init(0) == 0)
 	{
-		mSdlWindow = SDL_CreateWindow(mWindowTitle, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1024, 768, SDL_WINDOW_HIDDEN | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
+		m_sdlWindow = SDL_CreateWindow(mWindowTitle, SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 1024, 768, SDL_WINDOW_HIDDEN | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
 	}
 }
 
 void ApplicationImplSdl2::onDeinitialization()
 {
-	if (nullptr != mSdlWindow)
+	if (nullptr != m_sdlWindow)
 	{
-		SDL_DestroyWindow(mSdlWindow);
-		mSdlWindow = nullptr;
+		SDL_DestroyWindow(m_sdlWindow);
+		m_sdlWindow = nullptr;
 	}
 	// SDL_Quit(); TODO(co) SDL doesn't like "SDL_Quit()" -> "SDL_Init()", after this "SDL_PollEvent()" no longer gets any events
 }
@@ -67,10 +67,10 @@ bool ApplicationImplSdl2::processMessages()
 	// opportunity to e.g. restore the window position and size from a previous season without having a visible jumping window
 	if (mFirstUpdate)
 	{
-		if (nullptr != mSdlWindow)
+		if (nullptr != m_sdlWindow)
 		{
 			// Show the created SDL2 window
-			SDL_ShowWindow(mSdlWindow);
+			SDL_ShowWindow(m_sdlWindow);
 		}
 		#ifdef RENDERER_RUNTIME_IMGUI
 			initializeImGuiKeyMap();
@@ -137,9 +137,9 @@ bool ApplicationImplSdl2::processMessages()
 void ApplicationImplSdl2::getWindowSize(int& width, int& height) const
 {
 	// Is there a valid SDL2 window?
-	if (nullptr != mSdlWindow)
+	if (nullptr != m_sdlWindow)
 	{
-		SDL_GL_GetDrawableSize(mSdlWindow, &width, &height);
+		SDL_GL_GetDrawableSize(m_sdlWindow, &width, &height);
 	}
 	else
 	{
@@ -152,11 +152,11 @@ void ApplicationImplSdl2::getWindowSize(int& width, int& height) const
 handle ApplicationImplSdl2::getNativeWindowHandle() const
 {
 	handle nativeWindowHandle = NULL_HANDLE;
-	if (nullptr != mSdlWindow)
+	if (nullptr != m_sdlWindow)
 	{
 		SDL_SysWMinfo sdlSysWMinfo;
 		SDL_VERSION(&sdlSysWMinfo.version);
-		if (SDL_GetWindowWMInfo(mSdlWindow, &sdlSysWMinfo))
+		if (SDL_GetWindowWMInfo(m_sdlWindow, &sdlSysWMinfo))
 		{
 			switch (sdlSysWMinfo.subsystem)
 			{
@@ -237,10 +237,6 @@ void ApplicationImplSdl2::showUrgentMessage(const char* message, const char* tit
 	SDL_ShowMessageBox(&sdlMessageBoxData, &buttonid);
 }
 
-
-//[-------------------------------------------------------]
-//[ Private methods                                       ]
-//[-------------------------------------------------------]
 // Basing on https://github.com/ocornut/imgui/blob/master/examples/imgui_impl_sdl.cpp
 #ifdef RENDERER_RUNTIME_IMGUI
 	void ApplicationImplSdl2::initializeImGuiKeyMap()
@@ -302,15 +298,15 @@ void ApplicationImplSdl2::showUrgentMessage(const char* message, const char* tit
 				switch (sdlEvent.button.button)
 				{
 					case SDL_BUTTON_LEFT:
-						mImGuiMousePressed[0] = true;
+						m_imGuiMousePressed[0] = true;
 						break;
 
 					case SDL_BUTTON_RIGHT:
-						mImGuiMousePressed[1] = true;
+						m_imGuiMousePressed[1] = true;
 						break;
 
 					case SDL_BUTTON_MIDDLE:
-						mImGuiMousePressed[2] = true;
+						m_imGuiMousePressed[2] = true;
 						break;
 				}
 				break;
@@ -343,10 +339,10 @@ void ApplicationImplSdl2::showUrgentMessage(const char* message, const char* tit
 		ImGuiIO& imGuiIo = ImGui::GetIO();
 		int mousePositionX, mousePositionY;
 		const Uint32 sdlMouseButtons = SDL_GetMouseState(&mousePositionX, &mousePositionY);
-		imGuiIo.MouseDown[0] = (mImGuiMousePressed[0] || (sdlMouseButtons & SDL_BUTTON(SDL_BUTTON_LEFT)) != 0);	// If a mouse press event came, always pass it as "mouse held this frame", so we don't miss click-release events that are shorter than 1 frame
-		imGuiIo.MouseDown[1] = (mImGuiMousePressed[1] || (sdlMouseButtons & SDL_BUTTON(SDL_BUTTON_RIGHT)) != 0);
-		imGuiIo.MouseDown[2] = (mImGuiMousePressed[2] || (sdlMouseButtons & SDL_BUTTON(SDL_BUTTON_MIDDLE)) != 0);
-		mImGuiMousePressed[0] = mImGuiMousePressed[1] = mImGuiMousePressed[2] = false;
-		imGuiIo.MousePos = (SDL_GetWindowFlags(mSdlWindow) & SDL_WINDOW_INPUT_FOCUS) ? ImVec2(static_cast<float>(mousePositionX), static_cast<float>(mousePositionY)) : ImVec2(-FLT_MAX, -FLT_MAX);
+		imGuiIo.MouseDown[0] = (m_imGuiMousePressed[0] || (sdlMouseButtons & SDL_BUTTON(SDL_BUTTON_LEFT)) != 0);	// If a mouse press event came, always pass it as "mouse held this frame", so we don't miss click-release events that are shorter than 1 frame
+		imGuiIo.MouseDown[1] = (m_imGuiMousePressed[1] || (sdlMouseButtons & SDL_BUTTON(SDL_BUTTON_RIGHT)) != 0);
+		imGuiIo.MouseDown[2] = (m_imGuiMousePressed[2] || (sdlMouseButtons & SDL_BUTTON(SDL_BUTTON_MIDDLE)) != 0);
+		m_imGuiMousePressed[0] = m_imGuiMousePressed[1] = m_imGuiMousePressed[2] = false;
+		imGuiIo.MousePos = (SDL_GetWindowFlags(m_sdlWindow) & SDL_WINDOW_INPUT_FOCUS) ? ImVec2(static_cast<float>(mousePositionX), static_cast<float>(mousePositionY)) : ImVec2(-FLT_MAX, -FLT_MAX);
 	}
 #endif

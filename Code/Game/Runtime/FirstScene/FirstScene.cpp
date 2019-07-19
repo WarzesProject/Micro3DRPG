@@ -574,8 +574,10 @@ void FirstScene::saveIni()
 				}
 			#endif
 
+#if RENDERER_RUNTIME_IMGUI
 			// Backup open metrics window
 			sprintf_s(temp, GLM_COUNTOF(temp), "%d", rendererRuntime.getDebugGuiManager().hasOpenMetricsWindow());
+#endif
 			if (INI_NOT_FOUND == mOpenMetricsWindowIniProperty)
 			{
 				mOpenMetricsWindowIniProperty = ini_property_add(mIni, INI_GLOBAL_SECTION, "OpenMetricsWindow", 0, temp, 0);

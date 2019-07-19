@@ -1,6 +1,9 @@
 ﻿#include "stdafx.h"
 #include "ExampleRunner.h"
 #include "CommandLineArguments.h"
+#include "Game.h"
+
+#define SAMPLE 0
 
 //-----------------------------------------------------------------------------
 #if SE_COMPILER_MSVC
@@ -25,9 +28,15 @@ extern "C"
 	__declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
 }
 //-----------------------------------------------------------------------------
-int programEntryPoint(const CommandLineArguments& commandLineArguments)
+int programEntryPoint(const CommandLineArguments &commandLineArguments)
 {
+#if SAMPLE
 	return ExampleRunner().run(commandLineArguments);
+#else
+	GameConfig config;
+	Game game(config);
+	return game.Run();
+#endif
 }
 //-----------------------------------------------------------------------------
 int main(int argc, char **argv)
@@ -36,7 +45,7 @@ int main(int argc, char **argv)
 	(void)argv;
 
 	// For memory leak detection
-#ifdef _DEBUG
+#if SE_DEBUG
 	// "_CrtDumpMemoryLeaks()" reports false positive memory leak with static variables, so use a memory difference instead
 	_CrtMemState crtMemState = { 0 };
 	_CrtMemCheckpoint(&crtMemState);
@@ -47,11 +56,10 @@ int main(int argc, char **argv)
 	const int result = programEntryPoint(CommandLineArguments());
 
 	// For memory leak detection
-#ifdef _DEBUG
+#if SE_DEBUG
 	_CrtMemDumpAllObjectsSince(&crtMemState);
 #endif
 
-	// Done
 	return result;
 }
 //-----------------------------------------------------------------------------

@@ -36,7 +36,6 @@
     <ClCompile Include="Basics\FirstTexture\FirstTexture.cpp">
       <Filter>example\Basic\FirstTexture</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Runtime\FirstMesh\FirstMesh.cpp">
       <Filter>example\Runtime\FirstMesh</Filter>
     </ClCompile>
@@ -48,6 +47,15 @@
     </ClCompile>
     <ClCompile Include="Runtime\FirstScene\VrController.cpp">
       <Filter>example\Runtime\FirstScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowSDL.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApp.cpp">
+      <Filter>Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,7 +132,6 @@
     <ClInclude Include="Basics\FirstTexture\FirstTexture_Null.h">
       <Filter>example\Basic\FirstTexture</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h" />
     <ClInclude Include="Runtime\FirstMesh\FirstMesh_Null.h">
       <Filter>example\Runtime\FirstMesh</Filter>
     </ClInclude>
@@ -155,6 +162,15 @@
     <ClInclude Include="Runtime\FirstScene\VrController.h">
       <Filter>example\Runtime\FirstScene</Filter>
     </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowSDL.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApp.h">
+      <Filter>Game</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="example">
@@ -180,6 +196,9 @@
     </Filter>
     <Filter Include="example\Runtime\FirstScene">
       <UniqueIdentifier>{32299bd8-3b4d-405a-9a9b-ef1b925ecd18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{8777cd12-64fa-46a8-bef6-f092d54fc925}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

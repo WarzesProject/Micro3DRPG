@@ -167,6 +167,4 @@ private:
 	std::string					mCurrentExampleName;
 	std::string					mNextRendererName;
 	std::string					mNextExampleName;
-
-
 };

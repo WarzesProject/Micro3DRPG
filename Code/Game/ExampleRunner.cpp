@@ -143,7 +143,7 @@ int ExampleRunner::run(const CommandLineArguments& commandLineArguments)
 	do
 	{
 		// Run current example
-		mCurrentExampleName = "FirstScene";
+		mCurrentExampleName = "FirstTriangle";
 
 		result = runExample(mCurrentRendererName, mCurrentExampleName);
 		if (0 == result && !mNextRendererName.empty() && !mNextExampleName.empty())

@@ -1,43 +1,12 @@
 #pragma once
 
-
-//[-------------------------------------------------------]
-//[ Includes                                              ]
-//[-------------------------------------------------------]
 #include "Framework/PlatformTypes.h"
 
-
-//[-------------------------------------------------------]
-//[ Forward declarations                                  ]
-//[-------------------------------------------------------]
 class IApplication;
 
-#ifdef LINUX
-	// Copied from Xlib.h
-	struct _XDisplay;
-	typedef struct _XDisplay Display;
-#endif
-
-
-//[-------------------------------------------------------]
-//[ Classes                                               ]
-//[-------------------------------------------------------]
-/**
-*  @brief
-*    Abstract application implementation interface
-*/
 class IApplicationImpl
 {
-
-
-//[-------------------------------------------------------]
-//[ Public methods                                        ]
-//[-------------------------------------------------------]
 public:
-	/**
-	*  @brief
-	*    Destructor
-	*/
 	inline virtual ~IApplicationImpl()
 	{
 		// Nothing here
@@ -128,18 +97,6 @@ public:
 	*    message box.
 	*/
 	virtual void showUrgentMessage(const char* message, const char* title = "Urgent Message") const = 0;
-
-#ifdef LINUX
-	/**
-	*  @brief
-	*    Return the X11 display connection object
-	*
-	*  @note
-	*    - The X11 display connection object, can be a null pointer
-	*/
-	[[nodiscard]] virtual Display* getX11Display() const = 0;
-#endif
-
 
 //[-------------------------------------------------------]
 //[ Protected methods                                     ]
